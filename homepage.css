@@ -26,10 +26,10 @@ li{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: green;
+    background-color: #004080;
 }
 
-.home{
+.current{
     display: inline-block;
     width: 100px;
     text-align: center;
@@ -50,7 +50,24 @@ li{
 
 .menuitem:hover{
     font-weight:bold;
-    background-color: greenyellow;
+    background-color: #3399ff;
     color: black;
     cursor: hand;
+}
+
+.footer{
+    margin-top: 60px;
+}
+
+.lowerListItem{
+    margin-top: 30px;
+}
+
+.title{
+    text-align: center;
+}
+
+.picture{
+    display: block;
+    margin: auto;
 }

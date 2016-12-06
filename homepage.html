@@ -4,37 +4,29 @@
     <meta charset="UTF-8">
     <title>Ethan Williams</title>
     <link rel="stylesheet" href="homepage.css">
-    <script src="homepage.js"></script>
 </head>
+
 <body>
+    <script type="text/javascript" src="http://localhost:63342/ethwillz.com/homepage.js"></script>
     <ul class="menu">
-        <li class="home">Home</li>
-        <li class="menuitem">About me</li>
-        <li class="menuitem">Experience</li>
-        <li class="menuitem">Education</li>
+        <li class="current" id="home" onclick="navigate('home');">Home</li>
+        <li class="menuitem" id="projects" onClick="navigate('projects');">Projects</li>
+        <li class="menuitem" id="experience" onclick="navigate('experience');">Experience</li>
+        <li class="menuitem" id="blog" onclick="navigate('blog');">Blog</li>
+        <li class="menuitem" id="education" onclick="navigate('education');">Education</li>
     </ul>
-    <h1>Ethan Williams</h1>
-    <h2>Student at Iowa State University with experience in Java, Android, C/C#/C++, HTML, CSS, Javascript, and XML/XAML</h2>
-    <h3>Why should I hire Ethan Williams?</h3>
-    <p>I'ma  very motivated student. I take as many classes as I can; I came into college with
-    43 credits and plan to graduate with a computer engineering degree in three and a half years.
-    I am also getting an economics major and plan on staying an extra semester to an extra year in order to
-    get my MBA</p>
-    <h3>What projects has Ethan done that set him apart from everyone else?</h3>
-    <ul>
-        <li>Ease of Use Android Application</li>
-        <a href="https://play.google.com/store/apps/details?id=com.ethwillz.ethan.easeofuse&hl=en">
-            <img src="google-play-badge.png" style="width:15%;height:15%"/>
-        </a>
-            <ul>
-                <li>Curated men's fashion application to improve men's fashion. If you are an authrozied (approved stylish) person
-                then you are allowed to add new items, where you include a recommendation on how to wear them. As a normal user
-                    you can browse certifiably fashionable items and save items you like to buy them later.
-                </li>
-                <li>Includes a lot of complex design elements such as recycler views with card views populated by a NoSQL database,
-                a searching function, and OAth2.0 authentication with Google</li>
-            </ul>
-        <li></li>
-    </ul>
+    <h1 class="title">Ethan Williams</h1>
+    <h2 class="title">Computer engineering student at Iowa State University</h2>
+    <img src="pic.png" class="picture" style="width: 50%; height: 50%"/>
+    <h3>Hello!</h3>
+    <p>My name is Ethan Williams, I'm an intensely motivated student who looks for the best experiences. I have some information
+    about myself here as well as my blog in which I will occasionally go on rants about things I love/hate about different
+    aspects of software development or technology in general. If you're interested in seeing some of my work follow me on social media and
+    GitHub and such at the bottom of the page.</p>
 </body>
+
+<footer class="footer">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <a class="github-button" href="https://github.com/ethwillz" data-style="mega" data-count-href="/ethwillz/followers" data-count-api="/users/ethwillz#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @ethwillz on GitHub">Follow @ethwillz</a>
+</footer>
 </html>

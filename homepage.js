@@ -1,6 +1,3 @@
-home.onClick=reload();
-menuitem.onClick=reload();
-
-function reload(){
-    window.location = "homepage.html";
+function navigate(page){
+    window.location.href="http://localhost:63342/ethwillz.com/" + page + ".html";
 }
