@@ -1,69 +1,129 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Welcome to Firebase Hosting</title>
-    <style media="screen">
-      body {
-        font-family: Roboto, Arial, sans-serif;
-        background: #ECEFF1;
-        color: rgba(0,0,0,0.87);
-      }
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan Williams</title>
+    <link rel="stylesheet" href="browser_components/foundation.min.css">
+</head>
+<body>
 
-      a {
-        color: rgb(3,155,229);
-      }
+<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-      #message {
-        max-width: 400px;
-        margin: 40px auto;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
-        border-radius: 2px;
-        background: white;
-        padding: 16px 24px;
-      }
+        <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
+            <div class="row column">
+                <br>
+                <img class="thumbnail" src="pictures/personal_picture.jpg">
+                <h5>Ethan Williams</h5>
+                <p>Computer Engineering Student at Iowa State University. Former software engineering intern at Nexteer Automotive
+                    (Summer 2016) and future software engineering intern at Spreetail (Summer 2017). Also very into fashion
+                    and was deemed "best-dressed intern" by the CTO of Nexteer.</p>
+            </div>
+        </div>
 
-      #message h1 {
-        font-size: 22px;
-        font-weight: 500;
-        text-align: center;
-        margin: 0 0 16px;
-      }
+        <div class="off-canvas-content" data-off-canvas-content>
+            <div class="title-bar hide-for-large">
+                <div class="title-bar-left">
+                    <button class="menu-icon" type="button" data-open="my-info"></button>
+                    <span class="title-bar-title">Ethan</span>
+                </div>
+            </div>
+            <div class="callout primary">
+                <div class="row column">
+                    <h1>Ethan Williams Portfolio</h1>
+                    <p class="lead">I think that's the single best piece of advice: constantly think about how you could be doing things
+                        better and questioning yourself<br/>-Elon Musk</p>
+                </div>
+            </div>
+            <div class="row small-up-2 medium-up-3 large-up-4">
+                <div class="column">
+                    <a href="https://play.google.com/store/apps/details?id=com.ethwillz.ethan.easeofuse&hl=en">
+                        <img class="thumbnail" src="pictures/eou_launcher-web.png">
+                        <h5>Ease of Use</h5>
+                    </a>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>Stinder</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>Roguelike Game</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/550x550">
+                    <h5>My Site</h5>
+                </div>
+            </div>
 
-      #message p {
-        font-weight: 300;
-        line-height: 150%;
-      }
+            <hr>
 
-      #message ul {
-        list-style: none;
-        margin: 16px 0 0;
-        padding: 0;
-        text-align: center;
-      }
-
-      #message li a {
-        display: inline-block;
-        padding: 8px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 500;
-        background: rgb(3,155,229);
-        color: white;
-        border: 1px solid rgb(3,155,229);
-        border-radius: 3px;
-        font-size: 14px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h1>Welcome to Firebase Hosting</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <ul>
-        <li><a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a></li>
-      </ul>
+            <div class="row">
+                <div class="medium-6 columns">
+                    <h3>Contact Me</h3>
+                    <p>Let me know how you like the site, if you would like to collaborate on my software,
+                        or if you have oppurtunities to contribute to yours</p>
+                    <ul class="menu">
+                        <li><a href="https://github.com/ethwillz">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/ethan-williams-b7001aa0/">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/ethwillz">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="medium-6 columns">
+                    <label>Name
+                        <input type="text" placeholder="Name">
+                    </label>
+                    <label>Email
+                        <input type="text" placeholder="Email">
+                    </label>
+                    <label>
+                        Message
+                        <textarea placeholder="holla at a designerd"></textarea>
+                    </label>
+                    <input type="submit" class="button expanded" value="Submit">
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
 </html>
