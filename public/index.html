@@ -16,9 +16,17 @@
             });
         });
         $(function(){
-            $(".flipy").flip({
+            $(".flipy_l").flip({
                 trigger: 'hover'
             });
+        });
+        $(function(){
+            $(".flipy_r").flip({
+                trigger: 'hover'
+            });
+        });
+        $(document).ready(function() {
+            $(".flipy").css("height", $(".personal").height());
         });
     </script>
 </head>
@@ -32,11 +40,11 @@
     <li class="menu">Home</li>
 </ul>
 
-<div class="flipy">
+<div class="flipy_l">
     <div class="front">
-        <img class="personal" src="pictures/personal_picture.jpg"/>
+        <img src="pictures/personal_picture.jpg"/>
     </div>
-    <div class="back" id="personal_back">
+    <div class="back">
         <p>A big interest of mine is fashion, for awhile I was Fashion Director at Sir Magazine, a fashion publication
         for Iowa State Students. Now I just like dressing up day-to-day and do some modeling when I have a free
         weekend.</p>
@@ -46,7 +54,18 @@
 <div class = container>
     <div class="flipx">
         <div class="front">
-            <img class="hackathon" src="pictures/hackathon.jpg"/>
+            <img src="pictures/hackathon.jpg"/>
+        </div>
+        <div class="back">
+            <p>I'm a computer engineering student at Iowa State. This means that most of the time you'll see me doing this:
+                trying to find the bugs in my code. I work on school projects quite a bit, but I also have many personal projects.
+                You can check them out in my portfolio.</p>
+        </div>
+    </div>
+
+    <div class="flipx">
+        <div class="front">
+            <img src="pictures/hackathon.jpg"/>
         </div>
         <div class="back">
             <p>I'm a computer engineering student at Iowa State. This means that most of the time you'll see me doing this:
@@ -56,6 +75,16 @@
     </div>
 </div>
 
+<div class="flipy_r">
+    <div class="front">
+        <img src="pictures/personal_picture.jpg"/>
+    </div>
+    <div class="back">
+        <p>A big interest of mine is fashion, for awhile I was Fashion Director at Sir Magazine, a fashion publication
+            for Iowa State Students. Now I just like dressing up day-to-day and do some modeling when I have a free
+            weekend.</p>
+    </div>
+</div>
 
 </body>
 

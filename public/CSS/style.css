@@ -1,13 +1,3 @@
-.personal{
-    width:23%;
-    height: auto;
-}
-
-.hackathon{
-    width:auto;
-    height: 23%;
-}
-
 .menu {
     float: right;
     display: block;
@@ -37,39 +27,67 @@
 .container{
     float:left;
     height:auto;
-    width:600px;
+    width:auto;
+    overflow: hidden;
 }
 
-.flipy {
-    height: auto;
+.flipy_l {
+    height: 550px;
     width: 320px;
     margin: 0 auto;
     float:left;
     margin-left: 20px;
     margin-top: 20px;
+    overflow: hidden;
+}
+
+.flipy_l img {
+    width: 320px;
+    height: auto;
+    overflow: hidden;
+}
+
+.flipy_l .back {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.flipy_r {
+    height: 550px;
+    width: 320px;
+    margin: 0 auto;
+    float:left;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.flipy_r img {
+    width: 320px;
+    height: auto;
+    overflow: hidden;
+}
+
+.flipy_r .back {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
 }
 
 .flipx{
-    height: 320px;
-    width: auto;
+    height: 270px;
+    width: 500px;
     margin: 0 auto;
     margin-left: 20px;
     margin-top: 20px;
-}
-.flipy img {
-    width: 320px;
-    height: auto;
+    overflow: hidden;
 }
 
 .flipx img {
     width: auto;
-    height: 320px;
-}
-
-.flipy .back {
-    background: #ffffff;
-    color: #000000;
-    text-align: center;
+    height: 270px;
+    overflow: hidden;
 }
 
 .flipx .back {
