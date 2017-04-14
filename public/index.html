@@ -5,30 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan Williams</title>
     <link rel="shortcut icon" type="image/x-icon" href="pictures/logo.png" />
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Coda:400,800|Share:400,700" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="Javascript/jquery.flip.min.js"></script>
+    <script>
+        $(function(){
+            $(".flipx").flip({
+                trigger: 'hover',
+                axis: 'x'
+            });
+        });
+        $(function(){
+            $(".flipy").flip({
+                trigger: 'hover'
+            });
+        });
+    </script>
 </head>
 <body bgcolor="black">
 
 <ul>
     <li class="main">Ethan Williams</li>
-    <li class="menu"></li>
     <li class="menu">Chat</li>
     <li class="menu">Portfolio</li>
     <li class="menu">About</li>
     <li class="menu">Home</li>
 </ul>
 
-<div id="image">
-    <img class="personal" src="pictures/personal_picture.jpg"/>
+<div class="flipy">
+    <div class="front">
+        <img class="personal" src="pictures/personal_picture.jpg"/>
+    </div>
+    <div class="back" id="personal_back">
+        <p>A big interest of mine is fashion, for awhile I was Fashion Director at Sir Magazine, a fashion publication
+        for Iowa State Students. Now I just like dressing up day-to-day and do some modeling when I have a free
+        weekend.</p>
+    </div>
 </div>
 
-<div id="content">
-    <h1 >Welcome</h1>
-    <p>I'm Ethan Williams, a Computer Engineering student at Iowa State. I spend a lot of my time writing code
-    for classes but I also work on several personal projects in my free time. Additionally, I enjoy climbing,
-    running, music, and fasion.</p>
+<div class = container>
+    <div class="flipx">
+        <div class="front">
+            <img class="hackathon" src="pictures/hackathon.jpg"/>
+        </div>
+        <div class="back">
+            <p>I'm a computer engineering student at Iowa State. This means that most of the time you'll see me doing this:
+                trying to find the bugs in my code. I work on school projects quite a bit, but I also have many personal projects.
+                You can check them out in my portfolio.</p>
+        </div>
+    </div>
 </div>
+
 
 </body>
 

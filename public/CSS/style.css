@@ -1,0 +1,93 @@
+.personal{
+    width:23%;
+    height: auto;
+}
+
+.hackathon{
+    width:auto;
+    height: 23%;
+}
+
+.menu {
+    float: right;
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu:hover{
+    background-color: #000000;
+    color: #ffffff;
+    cursor: hand;
+}
+
+.main {
+    float: left;
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.container{
+    float:left;
+    height:auto;
+    width:600px;
+}
+
+.flipy {
+    height: auto;
+    width: 320px;
+    margin: 0 auto;
+    float:left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.flipx{
+    height: 320px;
+    width: auto;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.flipy img {
+    width: 320px;
+    height: auto;
+}
+
+.flipx img {
+    width: auto;
+    height: 320px;
+}
+
+.flipy .back {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.flipx .back {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+p{
+    font-size: 22px;
+    color: black;
+    margin: 30px;
+}
