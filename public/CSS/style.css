@@ -28,72 +28,55 @@
     float:left;
     height:auto;
     width:auto;
-    overflow: hidden;
+    position: relative;
 }
 
-.flipy_l {
-    height: 550px;
-    width: 320px;
-    margin: 0 auto;
-    float:left;
-    margin-left: 20px;
+.flipy{
+    perspective: 1000px;
     margin-top: 20px;
-    overflow: hidden;
 }
 
-.flipy_l img {
+.flipy:hover .flipper, .flipy.hover .flipper{
+    transform: rotateY(180deg);
+}
+
+.flipy, .front, .back{
+    height: 573px;
     width: 320px;
-    height: auto;
-    overflow: hidden;
 }
 
-.flipy_l .back {
+.flipper{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back{
+    backface-visibility: hidden;
+    border-radius: 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back{
+    transform: rotateY(180deg);
     background: #ffffff;
-    color: #000000;
-    text-align: center;
 }
 
-.flipy_r {
-    height: 550px;
-    width: 320px;
-    margin: 0 auto;
-    float:left;
-    margin-left: 20px;
-    margin-top: 20px;
-    overflow: hidden;
+.mags{
+    margin-top: 25px;
+    margin-left: 22px;
 }
 
-.flipy_r img {
-    width: 320px;
-    height: auto;
-    overflow: hidden;
-}
-
-.flipy_r .back {
-    background: #ffffff;
-    color: #000000;
-    text-align: center;
-}
-
-.flipx{
-    height: 270px;
-    width: 500px;
-    margin: 0 auto;
-    margin-left: 20px;
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-.flipx img {
+.mag{
+    height: 175px;
     width: auto;
-    height: 270px;
-    overflow: hidden;
-}
-
-.flipx .back {
-    background: #ffffff;
-    color: #000000;
-    text-align: center;
 }
 
 ul {
@@ -107,5 +90,6 @@ ul {
 p{
     font-size: 22px;
     color: black;
-    margin: 30px;
+    text-align: center;
+    padding: 10px;
 }
