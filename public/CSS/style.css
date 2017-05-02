@@ -1,101 +1,7 @@
-.head-shadow{
-    width: auto;
-    height: auto;
-}
-
-.overview{
-    position: relative;
-    margin-left: 60px;
- }
-
-.flipy, .container{
-    display: inline-block;
-    vertical-align: top;
-}
-
-.container{
-    height:540px;
-    width:437px;
-    position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-}
-
-#top{
-    margin-bottom: 20px;
-}
-
-.flipx{
-    perspective: 1000px;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 7px;
-    border-color: white;
-}
-
-.flipx:hover .flipper, .flipx.hover .flipper{
-    transform: rotateY(180deg);
-}
-
-.flipx, .flipx .flipper .front, .flipx .flipper .back{
-    height: 270px;
-    width: 437px;
-}
-
-.flipx .flipper{
-    transition: 0.9s;
-    transform-style: preserve-3d;
-    position: relative;
-}
-
-.flipx .front, .flipx .back{
-    backface-visibility: hidden;
-    border-radius: 7px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.flipx .front{
-    z-index: 2;
-    transform: rotateY(0deg);
-}
-
-.flipx .back{
-    transform: rotateY(180deg);
-    background: #ffffff;
-}
-
-.flipy{
-    perspective: 1000px;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 7px;
-    border-color: white;
-}
-
-.flipy:hover .flipper, .flipy.hover .flipper{
-    transform: rotateY(180deg);
-}
-
-.flipy, .flipy .flipper .front, .flipy .flipper .back{
-    height: 573px;
-    width: 320px;
-}
-
-.flipy .flipper{
-    transition: 0.9s;
-    transform-style: preserve-3d;
-    position: relative;
-}
-
-.flipy .front, .flipy .back{
-    backface-visibility: hidden;
-    border-radius: 7px;
-    position: absolute;
-    top: 0;
-    left: 0;
+.body{
+    min-width: 800px;
+    width: auto !important;
+    width:800px;
 }
 
 .flipy .front{
@@ -108,160 +14,1382 @@
     background: #ffffff;
 }
 
-.mags{
-    margin-top: 25px;
-    margin-left: 22px;
+@media screen and (min-width: 1100px){
+    .overview{
+        position: relative;
+        margin-left: 60px;
+     }
+
+    .flipy, .container{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .container{
+        height:540px;
+        width:437px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+
+    #top{
+        margin-bottom: 20px;
+    }
+
+    .flipx{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
+
+    .flipx:hover .flipper, .flipx.hover .flipper{
+        transform: rotateY(180deg);
+    }
+
+    .flipx, .flipx .flipper .front, .flipx .flipper .back{
+        height: 270px;
+        width: 437px;
+    }
+
+    .flipx .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .flipx .front, .flipx .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flipx .front{
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+
+    .flipx .back{
+        transform: rotateY(180deg);
+        background: #ffffff;
+    }
+
+    .flipy{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
+
+    .flipy:hover .flipper, .flipy.hover .flipper{
+        transform: rotateY(180deg);
+    }
+
+    .flipy, .flipy .flipper .front, .flipy .flipper .back{
+        height: 573px;
+        width: 320px;
+    }
+
+    .flipy .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .flipy .front, .flipy .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .mags{
+        margin-top: 25px;
+        margin-left: 22px;
+    }
+
+    .mag-card{
+        height: 175px;
+        width: auto;
+    }
+
+    .insta-card{
+        display: block;
+        margin: auto;
+        height: 100px;
+        width: auto;
+    }
+
+    .github-card{
+        display: block;
+        margin: auto;
+        height: 100px;
+        width: auto;
+    }
+
+    .about-back{
+        opacity: .3;
+        position: absolute;
+        height: 450px;
+        width: 26.5%;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+
+    .content{
+        width: 25%;
+        height: 425px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-top: 30px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .about-pic{
+        opacity: .5;
+        width: 100%;
+    }
+
+    .project-pic{
+        width: 40%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .description{
+        width: 55%;
+        height: auto;
+    }
+
+    .top-pic{
+        position: relative;
+        width: 150px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .bottom-pic{
+        position: relative;
+        height: 75px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .project{
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-bottom: 15px;
+        width:42%;
+        height:350px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+    }
+
+    .project-pic, .description{
+        display: inline-block;
+    }
+
+    .project-pic{
+        margin-top: 60px;
+    }
+
+    .description{
+        margin-top: 9px;
+    }
+
+    .section{
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1000;
+        margin-top: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    li{
+        display: inline;
+        margin: 15px;
+        font-size: 22px;
+        padding: 8px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    p{
+        font-size: 21px;
+        color: black;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 80px;
+    }
+
+    h2{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    h3{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about-p{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .project-p{
+        color: white;
+        font-size: 20px;
+        text-align: left;
+    }
 }
 
-.mag{
-    height: 175px;
-    width: auto;
+@media screen and (min-width: 900px) and (max-width: 1100px){
+    .overview{
+        position: relative;
+        margin-left: 15px;
+    }
+
+    .flipy, .container{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .container{
+        height:380px;
+        width:308px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+
+    #top{
+        margin-bottom: 15px;
+    }
+
+    .flipx{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
+
+    .flipx:hover .flipper, .flipx.hover .flipper{
+        transform: rotateY(180deg);
+    }
+
+    .flipx, .flipx .flipper .front, .flipx .flipper .back{
+        height: 190px;
+        width: 308px;
+    }
+
+    .flipx .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .flipx .front, .flipx .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flipx .front{
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+
+    .flipx .back{
+        transform: rotateY(180deg);
+        background: #ffffff;
+    }
+
+    .flipy{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
+
+    .flipy:hover .flipper, .flipy.hover .flipper{
+        transform: rotateY(180deg);
+    }
+
+    .flipy, .flipy .flipper .front, .flipy .flipper .back{
+        height: 420px;
+        width: 235px;
+    }
+
+    .flipy .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .flipy .front, .flipy .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .mags{
+        margin-top: 25px;
+        margin-left: 22px;
+    }
+
+    .mag-card{
+        height: 125px;
+        width: auto;
+    }
+
+    .insta-card{
+        display: block;
+        margin: auto;
+        height: 67px;
+        width: auto;
+    }
+
+    .github-card{
+        display: block;
+        margin: auto;
+        height: 80px;
+        width: auto;
+    }
+
+    .about-back{
+        opacity: .3;
+        position: absolute;
+        height: 400px;
+        width: 27%;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+
+    .content{
+        width: 25%;
+        height: 375px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-top: 30px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .about-pic{
+        opacity: .5;
+        width: 100%;
+    }
+
+    .project-pic{
+        width: 40%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .description{
+        width: 55%;
+        height: auto;
+    }
+
+    .top-pic{
+        position: relative;
+        width: 100px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .bottom-pic{
+        position: relative;
+        height: 50px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .project{
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-bottom: 15px;
+        width:42%;
+        height:350px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+    }
+
+    .project-pic, .description{
+        display: inline-block;
+    }
+
+    .project-pic{
+        margin-top: 50px;
+    }
+
+    .description{
+        margin-top: 9px;
+    }
+
+    .section{
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1000;
+        margin-top: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    li{
+        display: inline;
+        margin: 15px;
+        font-size: 22px;
+        padding: 8px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    p{
+        font-size: 15px;
+        color: black;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 75px;
+    }
+
+    h2{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    h3{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about-p{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .project-p{
+        color: white;
+        font-size: 16px;
+        text-align: left;
+    }
 }
 
-.about-pic{
-    opacity: .5;
-    width: 100%;
+@media screen and (min-width: 700px) and (max-width: 900px){
+    .overview{
+        position: relative;
+        margin-left: 15px;
+    }
+
+    .flipy, .container{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .container{
+        height:380px;
+        width:308px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+
+    #top{
+        margin-bottom: 15px;
+    }
+
+    .flipx{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
+
+    .flipx:hover .flipper, .flipx.hover .flipper{
+        transform: rotateY(180deg);
+    }
+
+    .flipx, .flipx .flipper .front, .flipx .flipper .back{
+        height: 190px;
+        width: 308px;
+    }
+
+    .flipx .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .flipx .front, .flipx .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flipx .front{
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+
+    .flipx .back{
+        transform: rotateY(180deg);
+        background: #ffffff;
+    }
+
+    .flipy{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
+
+    .flipy:hover .flipper, .flipy.hover .flipper{
+        transform: rotateY(180deg);
+    }
+
+    .flipy, .flipy .flipper .front, .flipy .flipper .back{
+        height: 420px;
+        width: 235px;
+    }
+
+    .flipy .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .flipy .front, .flipy .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .mags{
+        margin-top: 25px;
+        margin-left: 22px;
+    }
+
+    .mag-card{
+        height: 125px;
+        width: auto;
+    }
+
+    .insta-card{
+        display: block;
+        margin: auto;
+        height: 67px;
+        width: auto;
+    }
+
+    .github-card{
+        display: block;
+        margin: auto;
+        height: 80px;
+        width: auto;
+    }
+
+    .about-back{
+        opacity: .3;
+        position: absolute;
+        height: 400px;
+        width: 27%;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+
+    .content{
+        width: 25%;
+        height: 375px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-top: 30px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .about-pic{
+        opacity: .5;
+        width: 100%;
+    }
+
+    .project-pic{
+        width: 40%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .description{
+        width: 55%;
+        height: auto;
+    }
+
+    .top-pic{
+        position: relative;
+        width: 100px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .bottom-pic{
+        position: relative;
+        height: 50px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .project{
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-bottom: 15px;
+        width:42%;
+        height:350px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+    }
+
+    .project-pic, .description{
+        display: inline-block;
+    }
+
+    .project-pic{
+        margin-top: 50px;
+    }
+
+    .description{
+        margin-top: 9px;
+    }
+
+    .section{
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1000;
+        margin-top: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    li{
+        display: inline;
+        margin: 15px;
+        font-size: 22px;
+        padding: 8px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    p{
+        font-size: 15px;
+        color: black;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 75px;
+    }
+
+    h2{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    h3{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about-p{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .project-p{
+        color: white;
+        font-size: 16px;
+        text-align: left;
+    }
 }
 
-.project-pic{
-    width: 40%;
-    height: auto;
+@media screen and (min-width: 500px) and (max-width: 700px){
+    .overview{
+        position: relative;
+        margin-left: 15px;
+    }
+
+    .flipy, .container{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .container{
+        height:380px;
+        width:308px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+
+    #top{
+        margin-bottom: 15px;
+    }
+
+    .flipx{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
+
+    .flipx:hover .flipper, .flipx.hover .flipper{
+        transform: rotateY(180deg);
+    }
+
+    .flipx, .flipx .flipper .front, .flipx .flipper .back{
+        height: 190px;
+        width: 308px;
+    }
+
+    .flipx .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .flipx .front, .flipx .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flipx .front{
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+
+    .flipx .back{
+        transform: rotateY(180deg);
+        background: #ffffff;
+    }
+
+    .flipy{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
+
+    .flipy:hover .flipper, .flipy.hover .flipper{
+        transform: rotateY(180deg);
+    }
+
+    .flipy, .flipy .flipper .front, .flipy .flipper .back{
+        height: 420px;
+        width: 235px;
+    }
+
+    .flipy .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .flipy .front, .flipy .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .mags{
+        margin-top: 25px;
+        margin-left: 22px;
+    }
+
+    .mag-card{
+        height: 125px;
+        width: auto;
+    }
+
+    .insta-card{
+        display: block;
+        margin: auto;
+        height: 67px;
+        width: auto;
+    }
+
+    .github-card{
+        display: block;
+        margin: auto;
+        height: 80px;
+        width: auto;
+    }
+
+    .about-back{
+        opacity: .3;
+        position: absolute;
+        height: 400px;
+        width: 27%;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+
+    .content{
+        width: 25%;
+        height: 375px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-top: 30px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .about-pic{
+        opacity: .5;
+        width: 100%;
+    }
+
+    .project-pic{
+        width: 40%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .description{
+        width: 55%;
+        height: auto;
+    }
+
+    .top-pic{
+        position: relative;
+        width: 100px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .bottom-pic{
+        position: relative;
+        height: 50px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .project{
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-bottom: 15px;
+        width:42%;
+        height:350px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+    }
+
+    .project-pic, .description{
+        display: inline-block;
+    }
+
+    .project-pic{
+        margin-top: 50px;
+    }
+
+    .description{
+        margin-top: 9px;
+    }
+
+    .section{
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1000;
+        margin-top: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    li{
+        display: inline;
+        margin: 15px;
+        font-size: 22px;
+        padding: 8px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    p{
+        font-size: 15px;
+        color: black;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 75px;
+    }
+
+    h2{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    h3{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about-p{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .project-p{
+        color: white;
+        font-size: 16px;
+        text-align: left;
+    }
 }
 
-.description{
-    width: 55%;
-    height: auto;
-}
+@media screen and (min-width: 300px) and (max-width: 500px){
+    .overview{
+        position: relative;
+        margin-left: 15px;
+    }
 
-.top-pic{
-    position: relative;
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: auto;
-}
+    .flipy, .container{
+        display: inline-block;
+        vertical-align: top;
+    }
 
-.bottom-pic{
-    position: relative;
-    height: 100px;
-    width: auto;
-    display: block;
-    margin: auto;
-}
+    .container{
+        height:380px;
+        width:308px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
 
-.project-pic{
-    margin-top: 10px;
-}
+    #top{
+        margin-bottom: 15px;
+    }
 
-.project{
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 7px;
-    border-color: white;
-    margin-bottom: 15px;
-}
+    .flipx{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
 
-.project-pic, .description{
-    display: inline-block;
-    vertical-align: top;
-}
+    .flipx:hover .flipper, .flipx.hover .flipper{
+        transform: rotateY(180deg);
+    }
 
-.section{
-    display: inline-block;
-    vertical-align: top;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1000;
-    margin-top: 0px;
-}
+    .flipx, .flipx .flipper .front, .flipx .flipper .back{
+        height: 190px;
+        width: 308px;
+    }
 
-.experience{
-    position: relative;
-}
+    .flipx .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
 
-.education{
-    position: relative;
-}
+    .flipx .front, .flipx .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-.about-back{
-    opacity: .3;
-    position: absolute;
-    height: 450px;
-    width: 26.5%;
-    border-radius: 7px;
-    margin-top: 15px;
-    margin-left: 5%;
-}
+    .flipx .front{
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
 
-.content{
-    width: 25%;
-    height: 425px;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 5%;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 7px;
-    border-color: white;
-    margin-top: 15px;
-    padding: 10px;
-    position: relative;
-}
+    .flipx .back{
+        transform: rotateY(180deg);
+        background: #ffffff;
+    }
 
-ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-    text-align: center;
-}
+    .flipy{
+        perspective: 1000px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+    }
 
-li{
-    display: inline;
-    margin: 15px;
-    font-size: 22px;
-    padding: 8px;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 7px;
-    border-color: white;
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-}
+    .flipy:hover .flipper, .flipy.hover .flipper{
+        transform: rotateY(180deg);
+    }
 
-p{
-    font-size: 21px;
-    color: black;
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-family: 'Maven Pro', sans-serif;
-}
+    .flipy, .flipy .flipper .front, .flipy .flipper .back{
+        height: 420px;
+        width: 235px;
+    }
 
-h1{
-    color: white;
-    text-align: center;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 80px;
-}
+    .flipy .flipper{
+        transition: 0.9s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
 
-h2{
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 50px;
-    text-align: center;
-}
+    .flipy .front, .flipy .back{
+        backface-visibility: hidden;
+        border-radius: 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-h3{
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 30px;
-    text-align: center;
-}
+    .mags{
+        margin-top: 25px;
+        margin-left: 22px;
+    }
 
-h4{
-    color: white;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 20px;
-    text-align: center;
+    .mag-card{
+        height: 125px;
+        width: auto;
+    }
+
+    .insta-card{
+        display: block;
+        margin: auto;
+        height: 67px;
+        width: auto;
+    }
+
+    .github-card{
+        display: block;
+        margin: auto;
+        height: 80px;
+        width: auto;
+    }
+
+    .about-back{
+        opacity: .3;
+        position: absolute;
+        height: 400px;
+        width: 27%;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+
+    .content{
+        width: 25%;
+        height: 375px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-top: 30px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .about-pic{
+        opacity: .5;
+        width: 100%;
+    }
+
+    .project-pic{
+        width: 40%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .description{
+        width: 55%;
+        height: auto;
+    }
+
+    .top-pic{
+        position: relative;
+        width: 100px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .bottom-pic{
+        position: relative;
+        height: 50px;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .project{
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        margin-bottom: 15px;
+        width:42%;
+        height:350px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+    }
+
+    .project-pic, .description{
+        display: inline-block;
+    }
+
+    .project-pic{
+        margin-top: 50px;
+    }
+
+    .description{
+        margin-top: 9px;
+    }
+
+    .section{
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1000;
+        margin-top: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    li{
+        display: inline;
+        margin: 15px;
+        font-size: 22px;
+        padding: 8px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 7px;
+        border-color: white;
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    p{
+        font-size: 15px;
+        color: black;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 75px;
+    }
+
+    h2{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    h3{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about-p{
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .project-p{
+        color: white;
+        font-size: 16px;
+        text-align: left;
+    }
 }

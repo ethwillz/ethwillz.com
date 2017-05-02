@@ -2,11 +2,20 @@
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = yes" />
     <title>Ethan Williams</title>
     <link rel="shortcut icon" type="image/x-icon" href="pictures/logo.png" />
     <link href="CSS/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="Javascript/main.js" rel="script"/>
+
+    <script>
+        $("about_button").click(function() {
+            $('html,body').animate({
+                    scrollTop: $(".about").offset().top},
+                'slow');
+        });
+    </script>
 </head>
 
 <body bgcolor="black">
@@ -14,9 +23,9 @@
 <div class="head">
     <h1>Ethan Williams</h1>
     <ul>
-        <li>Overview</li>
-        <li>About</li>
-        <li>Projects</li>
+        <li type="overview_button">Overview</li>
+        <li id="about_button">About</li>
+        <li class="projects_button">Projects</li>
     </ul>
 </div>
 
@@ -29,10 +38,10 @@
             <div class="back">
                 <div class="mags">
                     <a href="https://issuu.com/isusirmagazine">
-                        <img class="mag" src="pictures/sir.JPG"/>
+                        <img class="mag-card" src="pictures/sir.JPG"/>
                     </a>
                     <a href="https://issuu.com/chspublications/docs/trend_magazine_fall_2016_issue_21">
-                        <img class="mag" src="pictures/trend.JPG"/>
+                        <img class="mag-card" src="pictures/trend.JPG"/>
                     </a>
                 </div>
                 <p>One of my passions outside of tech is fashion. I worked as Fashion Director for an Iowa State publication
@@ -51,7 +60,7 @@
                     Between classes and personal projects, I know a lot of languages. Check out my Github below to get
                     an idea.</p>
                     <a href="https://github.com/ethwillz">
-                        <img style="display: block; margin: auto; height: 100px; width: auto;" src="pictures/github.png"/>
+                        <img class="github-card" src="pictures/github.png"/>
                     </a>
                 </div>
             </div>
@@ -65,7 +74,7 @@
                         events around the community like art openings or Holi. My Instagram is where I post most
                         of these experiences.</p>
                     <a href="https://www.instagram.com/ethwillz/?hl=en">
-                        <img style="display: block; margin: auto; height: 100px; width: auto;" src="pictures/instagram.png"/>
+                        <img class="insta-card" src="pictures/instagram.png"/>
                     </a>
                 </div>
             </div>
@@ -77,8 +86,8 @@
             <img class="front" src="pictures/climbing.jpeg"/>
             <div class="back">
                 <div class="mags">
-                    <img class="mag" src="pictures/sir.JPG"/>
-                    <img class="mag" src="pictures/trend.JPG"/>
+                    <img class="mag-card" src="pictures/sir.JPG"/>
+                    <img class="mag-card" src="pictures/trend.JPG"/>
                 </div>
                 <p>I really enjoy living an active and healthy lifestyle. My favorite sports are running, climbing. and lifting.
                 Between the three, I never have a time when I don't want to be active. I'm slowly phasing things like Mountain Dew
@@ -95,43 +104,43 @@
     <img class="about-back" src="pictures/isu.png"/>
     <div class="content">
         <h3>Iowa State University, College of Engineering</h3>
-        <h4>Bachelor's of Science, Computer Engineering, minor in Economics</h4>
-        <h4>3.72 GPA, Expected Graduation May 2019</h4>
+        <p class="about-p">Bachelor's of Science, Computer Engineering, minor in Economics</p>
+        <p class="about-p">3.72 GPA, Expected Graduation May 2019</p>
     </div>
 
     <img class="about-back" src="pictures/ieee.jpg"/>
     <div class="content">
         <h3>IEEE</h3>
-        <h4>I am the Secretary in Iowa State's student branch of IEEE. As secretary, it is my duty to keep all
+        <p class="about-p">I am the Secretary in Iowa State's student branch of IEEE. As secretary, it is my duty to keep all
         member information up to date and document important club events and meetings. I also help the rest of the
-        executive team to make decisions and host activities around campus or the community.</h4>
+        executive team to make decisions and host activities around campus or the community.</p>
     </div>
 
     <img class="about-back" src="pictures/isu.png"/>
     <div class="content">
         <h3>Iowa State University</h3>
-        <h4>During the school year, I am a TA for Computer Engineering 185 and 186. 185 is the introductory
+        <p class="about-p">During the school year, I am a TA for Computer Engineering 185 and 186. 185 is the introductory
             computer engineering course, teahcing students the basics of programming in C. In  186,
             students work together in teams to develop a software and/or hardware project. I take a mentor role,
-            helping with issues and making sure teams are making progress throughout the semester.</h4>
+            helping with issues and making sure teams are making progress throughout the semester.</p>
     </div>
 
     <img class="about-back" src="pictures/nexteer.png"/>
     <div class="content">
         <h3>Nexteer Automotive</h3>
-        <h4>In the summer of 2016, I moved to Michigan and worked in IT for Nexteer. My main project was a Windows
+        <p class="about-p">In the summer of 2016, I moved to Michigan and worked in IT for Nexteer. My main project was a Windows
         application in C# which was connected to a SQL database which stored software test cases, which replaced the current
         system for 3 teams in the company. Additionally, I worked on scripts for distribution packages and
-        integrating multiple company softwares using REST services.</h4>
+        integrating multiple company softwares using REST services.</p>
     </div>
 
     <img class="about-back" src="pictures/spreetail.jpg"/>
     <div class="content">
         <h3>Spreetail</h3>
-        <h4>In the summer of 2017, I will be working as a Software Engineering Intern at Spreetail in Lincoln, Nebraska.
+        <p class="about-p">In the summer of 2017, I will be working as a Software Engineering Intern at Spreetail in Lincoln, Nebraska.
         I look forward to the oppurtunity to work with a new, fast-paced company which actively pursues the use of new technologies.
         I will be working on the Business Development Squad creating internal software to keep product listings organized and up to
-        date.</h4>
+        date.</p>
     </div>
 
 </div>
@@ -147,7 +156,7 @@
         </div>
         <div class="description">
             <h3>Ease of Use</h3>
-            <p style="color: white; font-size: 20px; text-align: left;">Ease of Use is social network for fashion where users can share specific pieces or outfits
+            <p class="project-p">Ease of Use is social network for fashion where users can share specific pieces or outfits
             with their followers. The project was built in Android with Firebase for my backend and was built over a 6 month
             period in my free time.</p>
         </div>
@@ -162,7 +171,7 @@
         </div>
         <div class="description">
             <h3>ASCII Roguelike Game</h3>
-            <p style="color: white; font-size: 20px; text-align: left;">Ease of Use is social network for fashion where users can share specific pieces or outfits
+            <p class="project-p">Ease of Use is social network for fashion where users can share specific pieces or outfits
                 with their followers. The project was built in Android with Firebase for my backend and was built over a 6 month
                 period in my free time.</p>
         </div>
@@ -177,7 +186,7 @@
         </div>
         <div class="description">
             <h3>Cahoots</h3>
-            <p style="color: white; font-size: 20px; text-align: left;">Ease of Use is social network for fashion where users can share specific pieces or outfits
+            <p class="project-p">Ease of Use is social network for fashion where users can share specific pieces or outfits
                 with their followers. The project was built in Android with Firebase for my backend and was built over a 6 month
                 period in my free time.</p>
         </div>
@@ -192,7 +201,7 @@
         </div>
         <div class="description">
             <h3>LiveWell</h3>
-            <p style="color: white; font-size: 20px; text-align: left;">Ease of Use is social network for fashion where users can share specific pieces or outfits
+            <p class="project-p">Ease of Use is social network for fashion where users can share specific pieces or outfits
                 with their followers. The project was built in Android with Firebase for my backend and was built over a 6 month
                 period in my free time.</p>
         </div>
