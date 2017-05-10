@@ -3,6 +3,10 @@
     width: auto !important;
 }
 
+.header{
+    background-image: url('https://www.ethwillz.com/pictures/header.jpg');
+}
+
 .flipy .front{
     z-index: 2;
     transform: rotateY(0deg);
@@ -1074,12 +1078,12 @@
 @media screen and (min-width: 300px) and (max-width: 500px){
     .overview{
         position: relative;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     .flipy, .container{
-        display: inline-block;
-        vertical-align: top;
+        list-style-type: none;
+        margin-top: 10px;
     }
 
     .container{
@@ -1088,7 +1092,6 @@
         position: relative;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 0px;
     }
 
     #top{
@@ -1192,8 +1195,8 @@
     }
 
     .content{
-        width: 35%;
-        height: 375px;
+        width: auto;
+        height: 150px;
         display: inline-block;
         vertical-align: top;
         margin-left: 7%;
@@ -1308,27 +1311,27 @@
     h2{
         color: white;
         font-family: 'Maven Pro', sans-serif;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
     }
 
     h3{
         color: white;
         font-family: 'Maven Pro', sans-serif;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
     }
 
     .about-p{
         color: white;
         font-family: 'Maven Pro', sans-serif;
-        font-size: 15px;
+        font-size: 10px;
         text-align: center;
     }
 
     .project-p{
         color: white;
-        font-size: 13px;
+        font-size: 10px;
         text-align: left;
     }
 }
