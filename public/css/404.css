@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+}
+
+#main-message{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main-message > h1{
+  color: white;
+  text-align: center;
+}
+
+#main-message > img{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
