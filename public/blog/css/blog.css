@@ -1,46 +1,7 @@
 body{
   background-color: black;
-}
-
-.navbar{
-  display: flex;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  align-items: center;
-  justify-content: center;
-}
-
-#logo{
-  flex: 2;
-  float: left;
-}
-
-#navigation{
-  flex: 1;
-  display: flex;
-  float: right;
-  width: 33%
-}
-
-.navigation-element{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  border-style: solid;
-  border-radius: 4px 0 4px 0;
-  border-width: 1px;
-  border-color: white;
-  margin-right: 10px;
-  text-align: center;
-  font-size: 22px;
-  height: 35px;
-  background-color: black;
-  color: white;
-  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  margin: 0;
 }
 
 #title{

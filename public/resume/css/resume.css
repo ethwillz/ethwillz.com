@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+  width: 100%;
+  margin: 0;
+}
+
+embed{
+  position: absolute;
+  top: 17%;
+  left: 25%;
+}
+
+#download_pdf{
+  position: absolute;
+  top: 40%;
+  left: 80%;
+}
+
+#download_docx{
+  position: absolute;
+  top: 50%;
+  left: 80%;
+}
+
+.download{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 4px 0 4px 0;
+  border-width: 1px;
+  border-color: white;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 16px;
+  height: 35px;
+  width: 10%;
+  background-color: black;
+  color: white;
+}

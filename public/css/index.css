@@ -3,11 +3,6 @@ body{
   margin: 0;
 }
 
-a{
-  text-decoration: none;
-  color: black;
-}
-
 .navbar{
   display: flex;
   height: 50px;
@@ -44,6 +39,7 @@ a{
   font-size: 22px;
   height: 35px;
   background-color: white;
+  cursor: pointer;
   font-family: 'Noto Sans', sans-serif;
 }
 
