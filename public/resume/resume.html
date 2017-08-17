@@ -17,24 +17,34 @@
         Logo here
       </div>
       <div id="navigation">
-        <div class="navigation-element" onclick="location.href='../blog/blog.html'">
-          Blog
-        </div>
-        <div class="navigation-element" onclick="location.href='resume.html'">
-          Resume
-        </div>
-        <div class="navigation-element">
-          Projects
-        </div>
+        <button class="navigation-element" onclick="location.href='../blog/blog.html'">
+          <span>
+            Blog
+          </span>
+        </button>
+        <button class="navigation-element" onclick="location.href='resume.html'">
+          <span>
+            Resume
+          </span>
+        </button>
+        <button class="navigation-element">
+          <span>
+            Projects
+          </span>
+        </button>
       </div>
     </div>
 
     <embed src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="50%" height="140%"/>
 
-    <div class="download" id="download_pdf">
-      Download PDF
-    </div>
-    <div class="download" id="download_docx">
-      Download DOCX
-    </div>
+    <a href="resume.pdf" download="EthanWilliamsResume.pdf">
+      <div class="download" id="download_pdf">
+        Download PDF
+      </div>
+    </a>
+    <a href="resume.docx" download="EthanWilliamsResume.docx">
+      <div class="download" id="download_docx" href="resume.docx">
+        Download DOCX
+      </div>
+    </a>
   </body>

@@ -15,12 +15,12 @@ body{
 }
 
 #logo{
-  flex: 2;
+  flex: 3;
   float: left;
 }
 
 #navigation{
-  flex: 1;
+  flex: 2;
   display: flex;
   float: right;
   width: 33%
@@ -34,6 +34,7 @@ body{
   border-style: solid;
   border-radius: 4px 0 4px 0;
   border-width: 1px;
+  border-color: black;
   margin-right: 10px;
   text-align: center;
   font-size: 22px;
@@ -41,6 +42,31 @@ body{
   background-color: white;
   cursor: pointer;
   font-family: 'Noto Sans', sans-serif;
+}
+
+.navigation-element span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.navigation-element span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.navigation-element:hover span {
+  padding-right: 25px;
+}
+
+.navigation-element:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 #main{

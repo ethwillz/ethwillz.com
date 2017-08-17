@@ -37,4 +37,5 @@ embed{
   width: 10%;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
