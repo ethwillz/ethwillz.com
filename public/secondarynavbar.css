@@ -40,6 +40,10 @@
   cursor: pointer;
 }
 
+.navigation-element:hover{
+  border-radius: 6px 4px 6px 4px;
+}
+
 .navigation-element span{
   cursor: pointer;
   display: inline-block;
