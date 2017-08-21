@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = yes" />
       <title>Ethan Williams</title>
       <link href="css/resume.css" rel="stylesheet">
-      <link href="../secondarynavbar.css" rel="stylesheet">
+      <link href="../navbar.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -17,34 +17,170 @@
         Logo here
       </div>
       <div id="navigation">
-        <button class="navigation-element" onclick="location.href='../blog/blog.html'">
+        <div class="navigation-element" onclick="location.href='../index.html'">
           <span>
-            Blog
+            Home
           </span>
-        </button>
-        <button class="navigation-element" onclick="location.href='resume.html'">
-          <span>
-            Resume
-          </span>
-        </button>
-        <button class="navigation-element">
+        </div>
+        <div id="selected" class="navigation-element" onclick="location.href='resume.html'">
+         Resume
+        </div>
+        <div class="navigation-element">
           <span>
             Projects
           </span>
-        </button>
+        </div>
       </div>
     </div>
 
-    <embed src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="50%" height="140%"/>
+<div id="page-content">
+    <div id="download-group">
+      <a class="download" href="resume.pdf" download="EthanWilliamsResume.pdf">
+        <img style="width: 15%;" src="../pictures/download.png"/>
+        &nbsp Download PDF
+      </a>
+      <a class="download" href="resume.docx" download="EthanWilliamsResume.docx">
+        <img style="width: 15%;" src="../pictures/download.png"/>
+        &nbsp Download DOCX
+      </a>
+    </div>
 
-    <a href="resume.pdf" download="EthanWilliamsResume.pdf">
-      <div class="download" id="download_pdf">
-        Download PDF
+    <div class="section">
+      <div class="section-title">
+        Education
       </div>
-    </a>
-    <a href="resume.docx" download="EthanWilliamsResume.docx">
-      <div class="download" id="download_docx" href="resume.docx">
-        Download DOCX
+      <div class="top-section">
+        <div class="left">
+          <div class="institution">
+            Iowa State University
+          </div>
+          <div class="time">
+            August 2015- May 2019
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">
+            Computer Engineering Student
+          </div>
+          <div class="description">
+            Sample description
+          </div>
+        </div>
       </div>
-    </a>
+    </div>
+
+    <div class="section">
+      <div class="section-title">
+        Career
+      </div>
+      <div class="top-section">
+        <div class="left">
+          <div class="institution">
+            Iowa State University
+          </div>
+          <div class="time">
+            January 2017- Present
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">
+            Teaching Assitant/ Peer Mentor
+          </div>
+          <div class="description">
+            Spreetail is a fast-growing ecommerce company based in Lincoln that builds all thei software in house.
+            I worked as a full-stack .NET developer mainly focused on Spreetail's
+            internal management system for putting new inventory into the system and keeping track of
+            them through their lives in our inventory.
+          </div>
+          <div class="location-link">
+            <div class ="location">
+              <a href="https://www.google.com/maps/place/Coover+Hall,+2520+Osborn+Dr,+Ames,+IA+50011/@42.0284153,-93.6531691,17z/data=!3m1!4b1!4m5!3m4!1s0x87ee70a512c27ae9:0x15e6633604cdea3c!8m2!3d42.0283592!4d-93.6508836">
+                <img style="width: 15%;" src="../pictures/location.png"/>
+                Ames, IA
+              </a>
+            </div>
+            <div class="link">
+              <a href="https://iastate.edu">
+                <img style="width: 15%;" src="../pictures/link.png">
+                iastate.edu
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-section">
+        <div class="left">
+          <div class="institution">
+            Spreetail
+          </div>
+          <div class="time">
+            May 2017-August 2017
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">
+            Software Engineering Intern
+          </div>
+          <div class="description">
+            Spreetail is a fast-growing ecommerce company based in Lincoln that builds all thei software in house.
+            I worked as a full-stack .NET developer mainly focused on Spreetail's
+            internal management system for putting new inventory into the system and keeping track of
+            them through their lives in our inventory.
+          </div>
+          <div class="location-link">
+            <div class ="location">
+              <a href="https://www.google.com/maps/place/Nebraska+Innovation+Campus/@40.8326105,-96.6927284,15z/data=!4m2!3m1!1s0x0:0xc1aa88ff3dfa8f9d?sa=X&ved=0ahUKEwiSr4_p5ejVAhVHqlQKHfhJDpMQ_BIIeTAK">
+                <img style="width: 15%;" src="../pictures/location.png"/>
+                Lincoln, NE
+              </a>
+            </div>
+            <div class="link">
+              <a href="https://spreetail.com">
+                <img style="width: 15%;" src="../pictures/link.png">
+                spreetail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-section">
+        <div class="left">
+          <div class="institution">
+            Nexteer Automotive
+          </div>
+          <div class="time">
+            May 2017-August 2017
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">
+            Software Engineering Intern
+          </div>
+          <div class="description">
+            Spreetail is a fast-growing ecommerce company based in Lincoln that builds all thei software in house.
+            I worked as a full-stack .NET developer mainly focused on Spreetail's
+            internal management system for putting new inventory into the system and keeping track of
+            them through their lives in our inventory.
+          </div>
+          <div class="location-link">
+            <div class ="location">
+              <a href="https://www.google.com/maps/place/Nexteer+Automotive+Engineering+Headquarters/@10.3816754,-71.9329329,3z/data=!4m8!1m2!2m1!1snexteer+automotive!3m4!1s0x405a1c7a1a686a65:0x7d1ecaf3f7210ecd!8m2!3d43.413969!4d-83.880082">
+                <img style="width: 15%;" src="../pictures/location.png"/>
+                Saginaw, MI
+              </a>
+            </div>
+            <div class="link">
+              <a href="https://nexteer.com">
+                <img style="width: 15%;" src="../pictures/link.png">
+                nexteer.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>

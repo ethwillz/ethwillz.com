@@ -1,41 +1,90 @@
 body{
-  background-color: black;
   width: 100%;
   margin: 0;
 }
 
-embed{
-  position: absolute;
-  top: 17%;
-  left: 25%;
+a{
+  text-decoration: none;
 }
 
-#download_pdf{
+#page-content{
   position: absolute;
-  top: 40%;
-  left: 80%;
+  display: flex;
+  flex-direction: column;
+  top: 20%;
 }
 
-#download_docx{
-  position: absolute;
-  top: 50%;
-  left: 80%;
+#download-group{
+  display: flex;
+  margin-left: 35%;
+  width: 35%;
+}
+
+.section{
+  margin-top: 30px;
+  margin-left: 15%;
+  width: 70%;
 }
 
 .download{
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  border-style: solid;
-  border-radius: 4px 0 4px 0;
-  border-width: 1px;
-  border-color: white;
   margin-right: 10px;
   text-align: center;
   font-size: 16px;
   height: 35px;
-  width: 10%;
-  background-color: black;
-  color: white;
+  width: 20%;
+  color: black;
   cursor: pointer;
+  font-family: 'Noto Sans', sans-serif;
+  margin-right: 50px;
+}
+
+.section-title{
+  font-size: 25px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.top-section{
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+
+.left{
+  flex: 2;
+}
+
+.right{
+  flex: 3;
+}
+
+.institution, .title, .time, .description, .location-link{
+  margin-top: 12px;
+}
+
+.institution, .title{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.time, .description{
+  font-family: 'Poppins', sans-serif;
+}
+
+.location-link{
+  display: flex;
+  width: 60%;
+}
+
+.location, .link{
+  flex: 1;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }

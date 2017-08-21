@@ -6,6 +6,7 @@
     <title>Ethan Williams</title>
 
     <link href="css/index.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -21,21 +22,19 @@
         Logo here
       </div>
       <div id="navigation">
-        <button class="navigation-element" onclick="location.href='blog/blog.html'">
-          <span>
-            Blog
-          </span>
-        </button>
-        <button class="navigation-element" onclick="location.href='resume/resume.html'">
+        <div id="selected" class="navigation-element" onclick="location.href='index.html'">
+          Home
+        </div>
+        <div class="navigation-element" onclick="location.href='resume/resume.html'">
           <span>
             Resume
           </span>
-        </button>
-        <button class="navigation-element">
+        </div>
+        <div class="navigation-element">
           <span>
             Projects
           </span>
-        </button>
+        </div>
       </div>
     </div>
 
