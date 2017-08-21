@@ -5,25 +5,43 @@ body{
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 #page-content{
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 20%;
+  top: 10%;
+  background-color: black;
 }
 
 #download-group{
   display: flex;
-  margin-left: 35%;
+  margin-left: 13%;
   width: 35%;
+  background-color: #E5E7E9;
+  padding-left: 19.5%;
+  padding-right: 19.5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .section{
-  margin-top: 30px;
-  margin-left: 15%;
+  padding-top: 40px;
+  margin-left: 13%;
+  padding-left: 2%;
+  padding-right: 2%;
   width: 70%;
+  background-color: white;
+}
+
+.top{
+  padding-top: 15px;
+}
+
+.bottom{
+  margin-bottom: 5%;
 }
 
 .download{
@@ -33,7 +51,7 @@ a{
   justify-content: center;
   margin-right: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   height: 35px;
   width: 20%;
   color: black;
@@ -42,15 +60,24 @@ a{
   margin-right: 50px;
 }
 
+.download > img{
+  width: 22%;
+}
+
 .section-title{
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: bold;
   font-family: 'Noto Sans', sans-serif;
+}
+
+.section-title > img{
+  width: 5%;
 }
 
 .top-section{
   position: relative;
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .left{
@@ -82,9 +109,9 @@ a{
 
 .location, .link{
   flex: 1;
+  font-family: 'Poppins', sans-serif;
 }
 
-a{
-  text-decoration: none;
-  color: black;
+.location:hover, .link:hover{
+  text-decoration: underline;
 }
