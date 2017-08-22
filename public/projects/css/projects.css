@@ -1,0 +1,6 @@
+.selected{
+  border-style: solid;
+  border-radius: 4px 0 4px 0;
+  border-width: 1px;
+  border-color: black;
+}

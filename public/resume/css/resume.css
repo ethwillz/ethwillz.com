@@ -8,12 +8,28 @@ a{
   color: black;
 }
 
+.navbar{
+  background-color: black;
+}
+
+.selected{
+  border-style: solid;
+  border-radius: 4px 0 4px 0;
+  border-width: 1px;
+  border-color: white;
+}
+
+.navigation-element{
+  color: white;
+}
+
 #page-content{
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 10%;
+  top: 50px;
   background-color: black;
+  background-image: url('../../pictures/resume-background.jpg');
 }
 
 #download-group{
