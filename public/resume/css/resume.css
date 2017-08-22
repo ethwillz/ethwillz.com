@@ -27,9 +27,8 @@ a{
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 50px;
+  top: 80px;
   background-color: black;
-  background-image: url('../../pictures/resume-background.jpg');
 }
 
 #download-group{
