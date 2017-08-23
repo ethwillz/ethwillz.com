@@ -1,12 +1,12 @@
-.navbar{
+#navbar{
   display: flex;
-  height: 80px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 60px;
+  width: 100%;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  transition: top 0.2s ease-in-out;
+  position: fixed;
 }
 
 #logo{
@@ -21,6 +21,13 @@
   width: 33%;
 }
 
+.selected{
+  border-style: solid;
+  border-radius: 4px 0 4px 0;
+  border-width: 1px;
+  border-color: white;
+}
+
 .navigation-element{
   display: flex;
   align-items: center;
@@ -31,6 +38,7 @@
   font-size: 22px;
   height: 35px;
   cursor: pointer;
+  color: white;
   font-family: 'Noto Sans', sans-serif;
 }
 

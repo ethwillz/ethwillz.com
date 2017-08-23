@@ -1,18 +1,25 @@
 body{
   width: 100%;
   margin: 0;
+  top: 60px;
 }
 
-.selected{
-  border-style: solid;
-  border-radius: 4px 0 4px 0;
-  border-width: 1px;
-  border-color: black;
+#navbar{
+  opacity: .55;
+}
+
+.nav-down{
+  top: 0;
+}
+
+.nav-up {
+  top: -60px;
 }
 
 #main{
   background: url('../pictures/main.jpg');
   display: flex;
+  top: 60px;
 }
 
 #main-background{

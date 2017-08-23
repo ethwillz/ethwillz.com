@@ -1,21 +1,11 @@
 body{
   width: 100%;
   margin: 0;
+  padding-top: 60px;
 }
 
-.navbar{
-  background-color: black;
-}
-
-.selected{
-  border-style: solid;
-  border-radius: 4px 0 4px 0;
-  border-width: 1px;
-  border-color: white;
-}
-
-.navigation-element{
-  color: white;
+#navbar{
+  top: 0;
 }
 
 #header{
@@ -44,7 +34,6 @@ body{
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 80px;
   background-color: black;
 }
 
