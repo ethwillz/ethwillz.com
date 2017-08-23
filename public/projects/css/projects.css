@@ -1,11 +1,13 @@
 body{
   width: 100%;
   margin: 0;
-  padding-top: 60px;
+  padding-top: 4.5%;
 }
 
 #navbar{
   top: 0;
+  background-color: black;
+  position: absolute;
 }
 
 #header{

@@ -1,12 +1,10 @@
 #navbar{
   display: flex;
-  height: 60px;
+  height: 10%;
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  transition: top 0.2s ease-in-out;
-  position: fixed;
+  z-index: 1000;
 }
 
 #logo{
@@ -39,6 +37,7 @@
   height: 35px;
   cursor: pointer;
   color: white;
+  opacity: 1;
   font-family: 'Noto Sans', sans-serif;
 }
 

@@ -1,11 +1,13 @@
 body{
   width: 100%;
   margin: 0;
-  top: 60px;
+  top: 10%;
 }
 
 #navbar{
-  opacity: .55;
+  background: rgba(0, 0, 0, .6);
+  transition: top 0.15s ease-in-out;
+  position: fixed;
 }
 
 .nav-down{
@@ -17,7 +19,6 @@ body{
 }
 
 #main{
-  background: url('../pictures/main.jpg');
   display: flex;
   top: 60px;
 }
@@ -67,7 +68,6 @@ body{
 }
 
 #secondary{
-  background: url('../pictures/main.jpg');
   display: flex;
   position: relative;
 }
