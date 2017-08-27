@@ -1,6 +1,7 @@
-require('../navbar/navbar.js');
-require('../navbar/navbar.scss')
+require('./navbar/navbar.js');
+require('./navbar/navbar.scss')
 require('./css/index.scss');
+require('./resume/css/resume.scss');
 
 $(window).scroll(function(){
   //Personal information section fade in/out
