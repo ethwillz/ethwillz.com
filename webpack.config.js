@@ -10,30 +10,41 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file-loader?name=/images/[name].[ext]',
+          {
+            loader: 'image-webpack-loader',
+            query: {
+              mozjpeg: {
+                progressive: true,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              optipng: {
+                optimizationLevel: 4,
+              },
+              pngquant: {
+                quality: '75-90',
+                speed: 3,
+              },
+            },
+          }
+        ]
+      },
+      {
+        test: /\.(eot|otf|svg|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=/fonts/[name].[ext]'
+      },
+      {
         test: /\.scss$/,
         loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: ['file-loader?context=images&name=images/[name].[ext]', {
-          loader: 'image-webpack-loader',
-          query: {
-            mozjpeg: {
-              progressive: true,
-            },
-            gifsicle: {
-              interlaced: false,
-            },
-            optipng: {
-              optimizationLevel: 4,
-            },
-            pngquant: {
-              quality: '75-90',
-              speed: 3,
-            },
-          },
-        }]
-      },
+        test: /\.(html)$/,
+        loader: 'file-loader?name=[path][name].[ext]'
+      }
     ]
   },
   plugins: [

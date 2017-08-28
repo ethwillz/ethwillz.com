@@ -4,6 +4,16 @@ body{
   top: 10%;
 }
 
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('../fonts/FiraSans-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Asap-Regular";
+    src: url('../fonts/Asap-Regular.otf') format("opentype");
+}
+
 #navbar{
   background: rgba(0, 0, 0, .6);
   transition: top 0.15s ease-in-out;
@@ -59,12 +69,12 @@ body{
 
 .about > h1{
   height: 15%;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'FiraSans-Medium';
 }
 
 .about > h2{
   margin-top: 15%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Asap-Regular';
 }
 
 #secondary{
