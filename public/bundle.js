@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -192,7 +192,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(8);
+var	fixUrls = __webpack_require__(7);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -10768,17 +10768,10 @@ return jQuery;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/fonts/FiraSans-Medium.otf";
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(3)
-__webpack_require__(5);
-__webpack_require__(6)
-__webpack_require__(9);
-__webpack_require__(12);
+/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(4);
+__webpack_require__(5)
+__webpack_require__(8);
+__webpack_require__(10);
 
 $(window).scroll(function(){
   //Personal information section fade in/out
@@ -10809,7 +10802,7 @@ $(window).scroll(function(){
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {// Hide Header on on scroll down
@@ -10852,13 +10845,13 @@ function hasScrolled() {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(7);
+var content = __webpack_require__(6);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -10872,8 +10865,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/sass-loader/lib/loader.js?sourceMap!./navbar.scss", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/sass-loader/lib/loader.js?sourceMap!./navbar.scss");
+		module.hot.accept("!!../../node_modules/css-loader/index.js?url=false!../../node_modules/sass-loader/lib/loader.js!./navbar.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js?url=false!../../node_modules/sass-loader/lib/loader.js!./navbar.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -10883,21 +10876,21 @@ if(false) {
 }
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(true);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "#navbar {\n  display: flex;\n  height: 10%;\n  width: 100%;\n  align-items: center;\n  justify-content: center;\n  z-index: 1000; }\n\n#logo {\n  flex: 3;\n  float: left; }\n\n#navigation {\n  flex: 2;\n  display: flex;\n  float: right;\n  width: 33%; }\n\n.selected {\n  border-style: solid;\n  border-radius: 4px 0 4px 0;\n  border-width: 1px;\n  border-color: white; }\n\n.navigation-element {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex: 1;\n  margin-right: 10px;\n  text-align: center;\n  font-size: 90%;\n  height: 28px;\n  cursor: pointer;\n  color: white;\n  opacity: 1;\n  font-family: 'Noto Sans', sans-serif; }\n\n.navigation-element:hover {\n  border-radius: 0 4px 0 4px; }\n\n.navigation-element span {\n  cursor: pointer;\n  display: inline-block;\n  position: relative;\n  transition: 0.5s; }\n\n.navigation-element span:after {\n  content: '\\BB';\n  position: absolute;\n  opacity: 0;\n  top: 0;\n  right: -20px;\n  transition: 0.5s; }\n\n.navigation-element:hover span {\n  padding-right: 25px; }\n\n.navigation-element:hover span:after {\n  opacity: 1;\n  right: 0; }\n", "", {"version":3,"sources":["C:/users/ethan/desktop/ethwillz.com/public/navbar/public/navbar/navbar.scss"],"names":[],"mappings":"AAAA;EACE,cAAa;EACb,YAAW;EACX,YAAW;EACX,oBAAmB;EACnB,wBAAuB;EACvB,cAAa,EACd;;AAED;EACE,QAAO;EACP,YAAW,EACZ;;AAED;EACE,QAAO;EACP,cAAa;EACb,aAAY;EACZ,WAAU,EACX;;AAED;EACE,oBAAmB;EACnB,2BAA0B;EAC1B,kBAAiB;EACjB,oBAAmB,EACpB;;AAED;EACE,cAAa;EACb,oBAAmB;EACnB,wBAAuB;EACvB,QAAO;EACP,mBAAkB;EAClB,mBAAkB;EAClB,eAAc;EACd,aAAY;EACZ,gBAAe;EACf,aAAY;EACZ,WAAU;EACV,qCAAoC,EACrC;;AAED;EACE,2BAA0B,EAC3B;;AAED;EACE,gBAAe;EACf,sBAAqB;EACrB,mBAAkB;EAClB,iBAAgB,EACjB;;AAED;EACE,eAAgB;EAChB,mBAAkB;EAClB,WAAU;EACV,OAAM;EACN,aAAY;EACZ,iBAAgB,EACjB;;AAED;EACE,oBAAmB,EACpB;;AAED;EACE,WAAU;EACV,SAAQ,EACT","file":"navbar.scss","sourcesContent":["#navbar{\r\n  display: flex;\r\n  height: 10%;\r\n  width: 100%;\r\n  align-items: center;\r\n  justify-content: center;\r\n  z-index: 1000;\r\n}\r\n\r\n#logo{\r\n  flex: 3;\r\n  float: left;\r\n}\r\n\r\n#navigation{\r\n  flex: 2;\r\n  display: flex;\r\n  float: right;\r\n  width: 33%;\r\n}\r\n\r\n.selected{\r\n  border-style: solid;\r\n  border-radius: 4px 0 4px 0;\r\n  border-width: 1px;\r\n  border-color: white;\r\n}\r\n\r\n.navigation-element{\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  flex: 1;\r\n  margin-right: 10px;\r\n  text-align: center;\r\n  font-size: 90%;\r\n  height: 28px;\r\n  cursor: pointer;\r\n  color: white;\r\n  opacity: 1;\r\n  font-family: 'Noto Sans', sans-serif;\r\n}\r\n\r\n.navigation-element:hover{\r\n  border-radius: 0 4px 0 4px;\r\n}\r\n\r\n.navigation-element span{\r\n  cursor: pointer;\r\n  display: inline-block;\r\n  position: relative;\r\n  transition: 0.5s;\r\n}\r\n\r\n.navigation-element span:after{\r\n  content: '\\00bb';\r\n  position: absolute;\r\n  opacity: 0;\r\n  top: 0;\r\n  right: -20px;\r\n  transition: 0.5s;\r\n}\r\n\r\n.navigation-element:hover span {\r\n  padding-right: 25px;\r\n}\r\n\r\n.navigation-element:hover span:after {\r\n  opacity: 1;\r\n  right: 0;\r\n}\r\n"],"sourceRoot":""}]);
+exports.push([module.i, "#navbar {\n  display: flex;\n  height: 10%;\n  width: 100%;\n  align-items: center;\n  justify-content: center;\n  z-index: 1000; }\n\n#logo {\n  flex: 3;\n  float: left; }\n\n#navigation {\n  flex: 2;\n  display: flex;\n  float: right;\n  width: 33%; }\n\n.selected {\n  border-style: solid;\n  border-radius: 4px 0 4px 0;\n  border-width: 1px;\n  border-color: white; }\n\n.navigation-element {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex: 1;\n  margin-right: 10px;\n  text-align: center;\n  font-size: 90%;\n  height: 28px;\n  cursor: pointer;\n  color: white;\n  opacity: 1;\n  font-family: 'Noto Sans', sans-serif; }\n\n.navigation-element:hover {\n  border-radius: 0 4px 0 4px; }\n\n.navigation-element span {\n  cursor: pointer;\n  display: inline-block;\n  position: relative;\n  transition: 0.5s; }\n\n.navigation-element span:after {\n  content: '\\BB';\n  position: absolute;\n  opacity: 0;\n  top: 0;\n  right: -20px;\n  transition: 0.5s; }\n\n.navigation-element:hover span {\n  padding-right: 25px; }\n\n.navigation-element:hover span:after {\n  opacity: 1;\n  right: 0; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports) {
 
 
@@ -10992,13 +10985,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(10);
+var content = __webpack_require__(9);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -11012,8 +11005,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/sass-loader/lib/loader.js?sourceMap!./index.scss", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/sass-loader/lib/loader.js?sourceMap!./index.scss");
+		module.hot.accept("!!../../node_modules/css-loader/index.js?url=false!../../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js?url=false!../../node_modules/sass-loader/lib/loader.js!./index.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -11021,35 +11014,29 @@ if(false) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n  width: 100%;\n  margin: 0;\n  top: 10%; }\n\n@font-face {\n  font-family: \"FiraSans-Medium\";\n  src: url(\"../fonts/FiraSans-Medium.otf\") format(\"opentype\"); }\n\n@font-face {\n  font-family: \"Asap-Regular\";\n  src: url(\"../fonts/Asap-Regular.otf\") format(\"opentype\"); }\n\n#navbar {\n  background: rgba(0, 0, 0, 0.6);\n  transition: top 0.15s ease-in-out;\n  position: fixed; }\n\n.nav-down {\n  top: 0; }\n\n.nav-up {\n  top: -60px; }\n\n#main {\n  display: flex;\n  top: 60px; }\n\n#main-background {\n  width: 100%;\n  height: 100%; }\n\n#nameandtitle {\n  position: absolute;\n  top: 60%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  color: white;\n  font-size: 65px;\n  text-align: center;\n  font-family: 'Zilla Slab Highlight', cursive; }\n\n.information {\n  display: flex; }\n\n.about {\n  flex: 1;\n  text-align: center;\n  padding-top: 100px;\n  padding-bottom: 100px;\n  padding-left: 60px;\n  padding-right: 60px; }\n\n.about > img {\n  width: 60%;\n  height: auto; }\n\n.about > h1 {\n  height: 15%;\n  font-family: 'FiraSans-Medium'; }\n\n.about > h2 {\n  margin-top: 15%;\n  font-family: 'Asap-Regular'; }\n\n#secondary {\n  display: flex;\n  position: relative; }\n\n#secondary-background {\n  width: 100%;\n  height: 100%; }\n\n#quoteandauthor {\n  color: white;\n  top: 45%;\n  position: absolute;\n  font-family: 'Zilla Slab Highlight', cursive; }\n\n#quote {\n  font-size: 60px;\n  width: 60%;\n  margin-left: 30%;\n  display: none; }\n\n#author {\n  font-size: 35px;\n  width: 30%;\n  margin-left: 60%;\n  display: none; }\n\n.social-media {\n  flex: 1;\n  text-align: center;\n  margin-top: 80px;\n  margin-bottom: 50px; }\n\n.social-media > a > img {\n  width: 35%;\n  height: auto; }\n", ""]);
+
+// exports
+
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(true);
-// imports
-
-
-// module
-exports.push([module.i, "body {\n  width: 100%;\n  margin: 0;\n  top: 10%; }\n\n@font-face {\n  font-family: \"FiraSans-Medium\";\n  src: url(" + __webpack_require__(3) + ") format(\"opentype\"); }\n\n@font-face {\n  font-family: \"Asap-Regular\";\n  src: url(" + __webpack_require__(11) + ") format(\"opentype\"); }\n\n#navbar {\n  background: rgba(0, 0, 0, 0.6);\n  transition: top 0.15s ease-in-out;\n  position: fixed; }\n\n.nav-down {\n  top: 0; }\n\n.nav-up {\n  top: -60px; }\n\n#main {\n  display: flex;\n  top: 60px; }\n\n#main-background {\n  width: 100%;\n  height: 100%; }\n\n#nameandtitle {\n  position: absolute;\n  top: 60%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  color: white;\n  font-size: 65px;\n  text-align: center;\n  font-family: 'Zilla Slab Highlight', cursive; }\n\n.information {\n  display: flex; }\n\n.about {\n  flex: 1;\n  text-align: center;\n  padding-top: 100px;\n  padding-bottom: 100px;\n  padding-left: 60px;\n  padding-right: 60px; }\n\n.about > img {\n  width: 60%;\n  height: auto; }\n\n.about > h1 {\n  height: 15%;\n  font-family: 'FiraSans-Medium'; }\n\n.about > h2 {\n  margin-top: 15%;\n  font-family: 'Asap-Regular'; }\n\n#secondary {\n  display: flex;\n  position: relative; }\n\n#secondary-background {\n  width: 100%;\n  height: 100%; }\n\n#quoteandauthor {\n  color: white;\n  top: 45%;\n  position: absolute;\n  font-family: 'Zilla Slab Highlight', cursive; }\n\n#quote {\n  font-size: 60px;\n  width: 60%;\n  margin-left: 30%;\n  display: none; }\n\n#author {\n  font-size: 35px;\n  width: 30%;\n  margin-left: 60%;\n  display: none; }\n\n.social-media {\n  flex: 1;\n  text-align: center;\n  margin-top: 80px;\n  margin-bottom: 50px; }\n\n.social-media > a > img {\n  width: 35%;\n  height: auto; }\n", "", {"version":3,"sources":["C:/users/ethan/desktop/ethwillz.com/public/css/public/css/index.scss"],"names":[],"mappings":"AAAA;EACE,YAAW;EACX,UAAS;EACT,SAAQ,EACT;;AAED;EACI,+BAA8B;EAC9B,sDAA2D,EAAA;;AAG/D;EACI,4BAA2B;EAC3B,sDAAwD,EAAA;;AAG5D;EACE,+BAA6B;EAC7B,kCAAiC;EACjC,gBAAe,EAChB;;AAED;EACE,OAAM,EACP;;AAED;EACE,WAAU,EACX;;AAED;EACE,cAAa;EACb,UAAS,EACV;;AAED;EACG,YAAW;EACX,aAAY,EACd;;AAED;EACE,mBAAkB;EAClB,SAAQ;EACR,UAAS;EACT,iCAAgC;EAChC,aAAY;EACZ,gBAAe;EACf,mBAAkB;EAClB,6CAA4C,EAC7C;;AAED;EACE,cAAa,EACd;;AAED;EACE,QAAO;EACP,mBAAkB;EAClB,mBAAkB;EAClB,sBAAqB;EACrB,mBAAkB;EAClB,oBAAmB,EACpB;;AAED;EACE,WAAU;EACV,aAAY,EACb;;AAED;EACE,YAAW;EACX,+BAA8B,EAC/B;;AAED;EACE,gBAAe;EACf,4BAA2B,EAC5B;;AAED;EACE,cAAa;EACb,mBAAkB,EACnB;;AAED;EACG,YAAW;EACX,aAAY,EACd;;AAED;EACE,aAAY;EACZ,SAAQ;EACR,mBAAkB;EAClB,6CAA4C,EAC7C;;AAED;EACE,gBAAe;EACf,WAAU;EACV,iBAAgB;EAChB,cAAa,EACd;;AAED;EACE,gBAAe;EACf,WAAU;EACV,iBAAgB;EAChB,cAAa,EACd;;AAED;EACE,QAAO;EACP,mBAAkB;EAClB,iBAAgB;EAChB,oBAAmB,EACpB;;AAED;EACE,WAAU;EACV,aAAY,EACb","file":"index.scss","sourcesContent":["body{\n  width: 100%;\n  margin: 0;\n  top: 10%;\n}\n\n@font-face {\n    font-family: \"FiraSans-Medium\";\n    src: url('../fonts/FiraSans-Medium.otf') format(\"opentype\");\n}\n\n@font-face {\n    font-family: \"Asap-Regular\";\n    src: url('../fonts/Asap-Regular.otf') format(\"opentype\");\n}\n\n#navbar{\n  background: rgba(0, 0, 0, .6);\n  transition: top 0.15s ease-in-out;\n  position: fixed;\n}\n\n.nav-down{\n  top: 0;\n}\n\n.nav-up {\n  top: -60px;\n}\n\n#main{\n  display: flex;\n  top: 60px;\n}\n\n#main-background{\n   width: 100%;\n   height: 100%;\n}\n\n#nameandtitle{\n  position: absolute;\n  top: 60%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  color: white;\n  font-size: 65px;\n  text-align: center;\n  font-family: 'Zilla Slab Highlight', cursive;\n}\n\n.information{\n  display: flex;\n}\n\n.about{\n  flex: 1;\n  text-align: center;\n  padding-top: 100px;\n  padding-bottom: 100px;\n  padding-left: 60px;\n  padding-right: 60px;\n}\n\n.about > img{\n  width: 60%;\n  height: auto;\n}\n\n.about > h1{\n  height: 15%;\n  font-family: 'FiraSans-Medium';\n}\n\n.about > h2{\n  margin-top: 15%;\n  font-family: 'Asap-Regular';\n}\n\n#secondary{\n  display: flex;\n  position: relative;\n}\n\n#secondary-background{\n   width: 100%;\n   height: 100%;\n}\n\n#quoteandauthor{\n  color: white;\n  top: 45%;\n  position: absolute;\n  font-family: 'Zilla Slab Highlight', cursive;\n}\n\n#quote{\n  font-size: 60px;\n  width: 60%;\n  margin-left: 30%;\n  display: none;\n}\n\n#author{\n  font-size: 35px;\n  width: 30%;\n  margin-left: 60%;\n  display: none;\n}\n\n.social-media{\n  flex: 1;\n  text-align: center;\n  margin-top: 80px;\n  margin-bottom: 50px;\n}\n\n.social-media > a > img{\n  width: 35%;\n  height: auto;\n}\n\n@media (min-width: 576px){\n\n}\n\n@media (min-width: 768px){\n\n}\n\n@media (min-width: 992px){\n\n}\n\n@media (min-width: 1200px){\n\n}\n"],"sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "/fonts/Asap-Regular.otf";
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(13);
+var content = __webpack_require__(11);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -11063,8 +11050,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/sass-loader/lib/loader.js?sourceMap!./resume.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/sass-loader/lib/loader.js?sourceMap!./resume.scss");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js?url=false!../../../node_modules/sass-loader/lib/loader.js!./resume.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js?url=false!../../../node_modules/sass-loader/lib/loader.js!./resume.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -11074,24 +11061,18 @@ if(false) {
 }
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(true);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "body {\n  width: 100%;\n  margin: 0; }\n\na {\n  text-decoration: none;\n  color: black; }\n\n#navbar {\n  background: rgba(0, 0, 0, 0.7);\n  transition: top 0.15s ease-in-out;\n  position: fixed; }\n\n.nav-down {\n  top: 0; }\n\n.nav-up {\n  top: -60px; }\n\n#page-content {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  background-image: url(" + __webpack_require__(14) + ");\n  background-attachment: fixed;\n  padding-bottom: 30px; }\n\n#download-group {\n  margin-top: 6%;\n  display: flex;\n  margin-left: 13%;\n  width: 35%;\n  background-color: #E5E7E9;\n  padding-left: 19.5%;\n  padding-right: 19.5%;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  border-radius: 7px 7px 0px 0px;\n  border-style: none none none none;\n  border-width: 2px; }\n\n.section {\n  padding-top: 40px;\n  margin-left: 13%;\n  padding-left: 2%;\n  padding-right: 2%;\n  width: 70%;\n  background-color: white; }\n\n.top {\n  padding-top: 15px; }\n\n.bottom {\n  padding-bottom: 5%;\n  border-radius: 0px 0px 7px 7px;\n  border-style: none none none none; }\n\n.download {\n  display: flex;\n  flex: 1;\n  align-items: center;\n  justify-content: center;\n  margin-right: 10px;\n  text-align: center;\n  font-size: 20px;\n  height: 35px;\n  width: 20%;\n  color: black;\n  cursor: pointer;\n  font-family: 'Noto Sans', sans-serif;\n  margin-right: 50px; }\n\n.download > img {\n  width: 22%; }\n\n.section-title {\n  font-size: 35px;\n  font-weight: bold;\n  font-family: 'Noto Sans', sans-serif; }\n\n.section-title > img {\n  width: 5%; }\n\n.top-section {\n  position: relative;\n  display: flex;\n  margin-top: 15px; }\n\n.left {\n  flex: 2; }\n\n.right {\n  flex: 3; }\n\n.institution, .title, .time, .description, .location-link {\n  margin-top: 12px; }\n\n.institution, .title {\n  font-size: 20px;\n  font-weight: bold;\n  font-family: 'Noto Sans', sans-serif; }\n\n.time, .description {\n  font-family: 'Poppins', sans-serif; }\n\n.location-link {\n  display: flex;\n  width: 60%; }\n\n.location, .link {\n  flex: 1;\n  font-family: 'Poppins', sans-serif; }\n\n.location:hover, .link:hover {\n  text-decoration: underline; }\n", "", {"version":3,"sources":["C:/users/ethan/desktop/ethwillz.com/public/resume/css/public/resume/css/resume.scss"],"names":[],"mappings":"AAAA;EACE,YAAW;EACX,UAAS,EACV;;AAED;EACE,sBAAqB;EACrB,aAAY,EACb;;AAED;EACE,+BAA6B;EAC7B,kCAAiC;EACjC,gBAAe,EAChB;;AAED;EACE,OAAM,EACP;;AAED;EACE,WAAU,EACX;;AAED;EACE,mBAAkB;EAClB,cAAa;EACb,uBAAsB;EACtB,gDAAiD;EACjD,6BAA4B;EAC5B,qBAAoB,EACrB;;AAED;EACE,eAAc;EACd,cAAa;EACb,iBAAgB;EAChB,WAAU;EACV,0BAAyB;EACzB,oBAAmB;EACnB,qBAAoB;EACpB,kBAAiB;EACjB,qBAAoB;EACpB,+BAA8B;EAC9B,kCAAiC;EACjC,kBAAiB,EAClB;;AAED;EACE,kBAAiB;EACjB,iBAAgB;EAChB,iBAAgB;EAChB,kBAAiB;EACjB,WAAU;EACV,wBAAuB,EACxB;;AAED;EACE,kBAAiB,EAClB;;AAED;EACE,mBAAkB;EAClB,+BAA8B;EAC9B,kCAAiC,EAClC;;AAED;EACE,cAAa;EACb,QAAO;EACP,oBAAmB;EACnB,wBAAuB;EACvB,mBAAkB;EAClB,mBAAkB;EAClB,gBAAe;EACf,aAAY;EACZ,WAAU;EACV,aAAY;EACZ,gBAAe;EACf,qCAAoC;EACpC,mBAAkB,EACnB;;AAED;EACE,WAAU,EACX;;AAED;EACE,gBAAe;EACf,kBAAiB;EACjB,qCAAoC,EACrC;;AAED;EACE,UAAS,EACV;;AAED;EACE,mBAAkB;EAClB,cAAa;EACb,iBAAgB,EACjB;;AAED;EACE,QAAO,EACR;;AAED;EACE,QAAO,EACR;;AAED;EACE,iBAAgB,EACjB;;AAED;EACE,gBAAe;EACf,kBAAiB;EACjB,qCAAoC,EACrC;;AAED;EACE,mCAAkC,EACnC;;AAED;EACE,cAAa;EACb,WAAU,EACX;;AAED;EACE,QAAO;EACP,mCAAkC,EACnC;;AAED;EACE,2BAA0B,EAC3B","file":"resume.scss","sourcesContent":["body{\r\n  width: 100%;\r\n  margin: 0;\r\n}\r\n\r\na{\r\n  text-decoration: none;\r\n  color: black;\r\n}\r\n\r\n#navbar{\r\n  background: rgba(0, 0, 0, .7);\r\n  transition: top 0.15s ease-in-out;\r\n  position: fixed;\r\n}\r\n\r\n.nav-down{\r\n  top: 0;\r\n}\r\n\r\n.nav-up {\r\n  top: -60px;\r\n}\r\n\r\n#page-content{\r\n  position: absolute;\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-image: url('../../images/pattern.jpg');\r\n  background-attachment: fixed;\r\n  padding-bottom: 30px;\r\n}\r\n\r\n#download-group{\r\n  margin-top: 6%;\r\n  display: flex;\r\n  margin-left: 13%;\r\n  width: 35%;\r\n  background-color: #E5E7E9;\r\n  padding-left: 19.5%;\r\n  padding-right: 19.5%;\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n  border-radius: 7px 7px 0px 0px;\r\n  border-style: none none none none;\r\n  border-width: 2px;\r\n}\r\n\r\n.section{\r\n  padding-top: 40px;\r\n  margin-left: 13%;\r\n  padding-left: 2%;\r\n  padding-right: 2%;\r\n  width: 70%;\r\n  background-color: white;\r\n}\r\n\r\n.top{\r\n  padding-top: 15px;\r\n}\r\n\r\n.bottom{\r\n  padding-bottom: 5%;\r\n  border-radius: 0px 0px 7px 7px;\r\n  border-style: none none none none;\r\n}\r\n\r\n.download{\r\n  display: flex;\r\n  flex: 1;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin-right: 10px;\r\n  text-align: center;\r\n  font-size: 20px;\r\n  height: 35px;\r\n  width: 20%;\r\n  color: black;\r\n  cursor: pointer;\r\n  font-family: 'Noto Sans', sans-serif;\r\n  margin-right: 50px;\r\n}\r\n\r\n.download > img{\r\n  width: 22%;\r\n}\r\n\r\n.section-title{\r\n  font-size: 35px;\r\n  font-weight: bold;\r\n  font-family: 'Noto Sans', sans-serif;\r\n}\r\n\r\n.section-title > img{\r\n  width: 5%;\r\n}\r\n\r\n.top-section{\r\n  position: relative;\r\n  display: flex;\r\n  margin-top: 15px;\r\n}\r\n\r\n.left{\r\n  flex: 2;\r\n}\r\n\r\n.right{\r\n  flex: 3;\r\n}\r\n\r\n.institution, .title, .time, .description, .location-link{\r\n  margin-top: 12px;\r\n}\r\n\r\n.institution, .title{\r\n  font-size: 20px;\r\n  font-weight: bold;\r\n  font-family: 'Noto Sans', sans-serif;\r\n}\r\n\r\n.time, .description{\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\n.location-link{\r\n  display: flex;\r\n  width: 60%;\r\n}\r\n\r\n.location, .link{\r\n  flex: 1;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\n.location:hover, .link:hover{\r\n  text-decoration: underline;\r\n}\r\n"],"sourceRoot":""}]);
+exports.push([module.i, "body {\n  width: 100%;\n  margin: 0; }\n\na {\n  text-decoration: none;\n  color: black; }\n\n#navbar {\n  background: rgba(0, 0, 0, 0.7);\n  transition: top 0.15s ease-in-out;\n  position: fixed; }\n\n.nav-down {\n  top: 0; }\n\n.nav-up {\n  top: -60px; }\n\n#page-content {\n  position: absolute;\n  display: flex;\n  flex-direction: column;\n  background-image: url(\"../../images/pattern.jpg\");\n  background-attachment: fixed;\n  padding-bottom: 30px; }\n\n#download-group {\n  margin-top: 6%;\n  display: flex;\n  margin-left: 13%;\n  width: 35%;\n  background-color: #E5E7E9;\n  padding-left: 19.5%;\n  padding-right: 19.5%;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  border-radius: 7px 7px 0px 0px;\n  border-style: none none none none;\n  border-width: 2px; }\n\n.section {\n  padding-top: 40px;\n  margin-left: 13%;\n  padding-left: 2%;\n  padding-right: 2%;\n  width: 70%;\n  background-color: white; }\n\n.top {\n  padding-top: 15px; }\n\n.bottom {\n  padding-bottom: 5%;\n  border-radius: 0px 0px 7px 7px;\n  border-style: none none none none; }\n\n.download {\n  display: flex;\n  flex: 1;\n  align-items: center;\n  justify-content: center;\n  margin-right: 10px;\n  text-align: center;\n  font-size: 20px;\n  height: 35px;\n  width: 20%;\n  color: black;\n  cursor: pointer;\n  font-family: 'Noto Sans', sans-serif;\n  margin-right: 50px; }\n\n.download > img {\n  width: 22%; }\n\n.section-title {\n  font-size: 35px;\n  font-weight: bold;\n  font-family: 'Noto Sans', sans-serif; }\n\n.section-title > img {\n  width: 5%; }\n\n.top-section {\n  position: relative;\n  display: flex;\n  margin-top: 15px; }\n\n.left {\n  flex: 2; }\n\n.right {\n  flex: 3; }\n\n.institution, .title, .time, .description, .location-link {\n  margin-top: 12px; }\n\n.institution, .title {\n  font-size: 20px;\n  font-weight: bold;\n  font-family: 'Noto Sans', sans-serif; }\n\n.time, .description {\n  font-family: 'Poppins', sans-serif; }\n\n.location-link {\n  display: flex;\n  width: 60%; }\n\n.location, .link {\n  flex: 1;\n  font-family: 'Poppins', sans-serif; }\n\n.location:hover, .link:hover {\n  text-decoration: underline; }\n", ""]);
 
 // exports
 
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "/images/pattern.jpg";
 
 /***/ })
 /******/ ]);

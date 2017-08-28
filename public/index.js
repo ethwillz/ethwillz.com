@@ -1,4 +1,3 @@
-require('./fonts/FiraSans-Medium.otf')
 require('./navbar/navbar.js');
 require('./navbar/navbar.scss')
 require('./css/index.scss');
