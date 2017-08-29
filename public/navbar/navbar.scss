@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('../fonts/FiraSans-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Asap-Regular";
+    src: url('../fonts/Asap-Regular.otf') format("opentype");
+}
+
 #navbar{
   display: flex;
   height: 10%;
@@ -19,13 +29,6 @@
   width: 33%;
 }
 
-.selected{
-  border-style: solid;
-  border-radius: 4px 0 4px 0;
-  border-width: 1px;
-  border-color: white;
-}
-
 .navigation-element{
   display: flex;
   align-items: center;
@@ -38,34 +41,21 @@
   cursor: pointer;
   color: white;
   opacity: 1;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Asap-Regular', sans-serif;
 }
 
-.navigation-element:hover{
-  border-radius: 0 4px 0 4px;
+.navigation-element > img{
+  width: 18%;
+}
+
+.navigation-element:hover img{
+  display: none;
 }
 
 .navigation-element span{
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.navigation-element span:after{
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+  display: none;
 }
 
 .navigation-element:hover span {
-  padding-right: 25px;
-}
-
-.navigation-element:hover span:after {
-  opacity: 1;
-  right: 0;
+  display: inline-block;
 }

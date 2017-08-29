@@ -8,6 +8,16 @@ a{
   color: black;
 }
 
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('../fonts/FiraSans-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Asap-Regular";
+    src: url('../fonts/Asap-Regular.otf') format("opentype");
+}
+
 #navbar{
   background: rgba(0, 0, 0, .7);
   transition: top 0.15s ease-in-out;
@@ -77,7 +87,7 @@ a{
   width: 20%;
   color: black;
   cursor: pointer;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'FiraSans-Medium', sans-serif;
   margin-right: 50px;
 }
 
@@ -88,7 +98,7 @@ a{
 .section-title{
   font-size: 35px;
   font-weight: bold;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'FiraSans-Medium', sans-serif;
 }
 
 .section-title > img{
@@ -116,11 +126,11 @@ a{
 .institution, .title{
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'FiraSans-Medium', sans-serif;
 }
 
 .time, .description{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Asap-Regular', sans-serif;
 }
 
 .location-link{
@@ -130,7 +140,7 @@ a{
 
 .location, .link{
   flex: 1;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Asap-Regular', sans-serif;
 }
 
 .location:hover, .link:hover{
