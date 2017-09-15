@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - 6.9.1
 before_script:
-- sudo npm run-script build
+- npm run build
 deploy:
   provider: firebase
   token:
