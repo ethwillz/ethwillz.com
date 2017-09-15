@@ -3,8 +3,6 @@ require('./navbar/navbar.scss')
 require('./css/index.scss');
 require('./resume/css/resume.scss');
 
-import Typed from 'typed.js';
-
 $(window).scroll(function(){
   //Personal information section fade in/out
   if($(window).scrollTop() > 180){
@@ -30,10 +28,3 @@ $(window).scroll(function(){
     $("#author").fadeOut();
   }
 });
-
-var options = {
-  strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
-  typeSpeed: 40
-}
-
-var typed = new Typed(".element", options);

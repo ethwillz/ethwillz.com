@@ -10,6 +10,10 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.(html)$/,
+        loader: 'file-loader?name=[path][name].[ext]'
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           'file-loader?name=/images/[name].[ext]',
@@ -40,10 +44,6 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: [ 'style-loader', 'css-loader?url=false', 'sass-loader' ]
-      },
-      {
-        test: /\.(html)$/,
-        loader: 'file-loader?name=[path][name].[ext]'
       }
     ]
   },

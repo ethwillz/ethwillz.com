@@ -10,11 +10,18 @@
 
 #navbar{
   display: flex;
-  height: 10%;
   width: 100%;
   align-items: center;
   justify-content: center;
   z-index: 1000;
+}
+
+.nav-down{
+  top: 0;
+}
+
+.nav-up {
+  top: -10%;
 }
 
 #logo{
@@ -36,16 +43,12 @@
   flex: 1;
   margin-right: 10px;
   text-align: center;
-  font-size: 90%;
+  font-size: 120%;
   height: 28px;
   cursor: pointer;
   color: white;
   opacity: 1;
   font-family: 'Asap-Regular', sans-serif;
-}
-
-.navigation-element > img{
-  width: 18%;
 }
 
 .navigation-element:hover img{
@@ -58,4 +61,32 @@
 
 .navigation-element:hover span {
   display: inline-block;
+}
+
+@media screen and (min-width: 320px){
+  .navigation-element > img{
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 480px){
+
+}
+
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 900px){
+  .navigation-element > img{
+    width: 16%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+
 }

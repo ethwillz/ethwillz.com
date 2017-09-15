@@ -1,7 +1,6 @@
 body{
   width: 100%;
   margin: 0;
-  top: 10%;
 }
 
 @font-face {
@@ -14,52 +13,27 @@ body{
     src: url('../fonts/Asap-Regular.otf') format("opentype");
 }
 
+$title-font: 'Zilla Slab Highlight', cursive;
+
 #navbar{
   background: rgba(0, 0, 0, .6);
   transition: top 0.15s ease-in-out;
   position: fixed;
 }
 
-.nav-down{
-  top: 0;
-}
-
-.nav-up {
-  top: -60px;
-}
-
 #main{
   display: flex;
-  top: 60px;
-}
-
-#main-background{
-   width: 100%;
-   height: 100%;
+  background-image: url('./images/main.jpg');
+  height: 100vh;
+  background-size: cover;
 }
 
 #nameandtitle{
   position: absolute;
-  top: 60%;
-  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 65px;
   text-align: center;
-  font-family: 'Zilla Slab Highlight', cursive;
-}
-
-.information{
-  display: flex;
-}
-
-.about{
-  flex: 1;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 60px;
-  padding-right: 60px;
+  font-family: $title-font;
 }
 
 .about > img{
@@ -80,58 +54,179 @@ body{
 #secondary{
   display: flex;
   position: relative;
+  background-image: url('./images/main2.jpg');
+  height: 100vh;
+  background-size: cover;
 }
 
-#secondary-background{
-   width: 100%;
-   height: 100%;
+@media screen and (min-width: 320px){
+  body{
+    top: 7.5%;
+  }
+
+  #navbar{
+      height: 7.5%;
+  }
+
+  #main{
+    background-position: 1000px 0px;
+    top: 7.5%;
+  }
+
+  #nameandtitle{
+    top: 60%;
+    left: 50%;
+    width: 88%;
+    font-size: 300%;
+  }
+
+  .information{
+    display: flex;
+  }
+
+  #personal-info{
+    flex-direction: column;
+  }
+
+  #secondary{
+    background-position: 700px 0px;
+  }
+
+  #quoteandauthor{
+    color: white;
+    width: 88%;
+    top: 38%;
+    position: absolute;
+    font-family: $title-font;
+  }
+
+  #quote{
+    font-size: 250%;
+    width: 90%;
+    margin-left: 10%;
+    display: none;
+  }
+
+  #author{
+    font-size: 150%;
+    width: 55%;
+    margin-left: 57%;
+    display: none;
+  }
+
+  .about{
+    flex: 1;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .social-media{
+    flex: 1;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .social-media > a > img{
+    width: 50%;
+    height: auto;
+  }
 }
 
-#quoteandauthor{
-  color: white;
-  top: 45%;
-  position: absolute;
-  font-family: 'Zilla Slab Highlight', cursive;
-}
-
-#quote{
-  font-size: 60px;
-  width: 60%;
-  margin-left: 30%;
-  display: none;
-}
-
-#author{
-  font-size: 35px;
-  width: 30%;
-  margin-left: 60%;
-  display: none;
-}
-
-.social-media{
-  flex: 1;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 50px;
-}
-
-.social-media > a > img{
-  width: 25%;
-  height: auto;
-}
-
-@media (min-width: 576px){
+@media screen and (min-width: 480px){
 
 }
 
-@media (min-width: 768px){
+@media screen and (min-width: 600px){
 
 }
 
-@media (min-width: 992px){
+@media screen and (min-width: 768px){
 
 }
 
-@media (min-width: 1200px){
+@media screen and (min-width: 900px){
+  body{
+    top: 7.5%;
+  }
 
+  #navbar{
+      height: 7.5%;
+  }
+
+  #main{
+    background-position: 0px 0px;
+    top: 7.5%;
+  }
+
+  #nameandtitle{
+    top: 54%;
+    left: 50%;
+    font-size: 400%;
+  }
+
+  .information{
+    display: flex;
+  }
+
+  #personal-info{
+    flex-direction: row;
+  }
+
+  #secondary{
+    background-position: 0px 0px;
+  }
+
+  #quoteandauthor{
+    color: white;
+    top: 52%;
+    position: absolute;
+    font-family: $title-font;
+  }
+
+  #quote{
+    font-size: 60px;
+    width: 60%;
+    margin-left: 30%;
+    display: none;
+  }
+
+  #author{
+    font-size: 35px;
+    width: 30%;
+    margin-left: 60%;
+    display: none;
+  }
+
+  .about{
+    flex: 1;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .social-media{
+    flex: 1;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .social-media > a > img{
+    width: 25%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  #nameandtitle{
+    top: 60%;
+    left: 50%;
+    font-size: 550%;
+  }
 }
