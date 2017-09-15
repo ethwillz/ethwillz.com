@@ -3,6 +3,7 @@ node_js:
 - 8.4.0
 before_script:
 - npm install cross-env -D
+- npm install --save-dev -g webpack
 - npm run build
 deploy:
   provider: firebase
