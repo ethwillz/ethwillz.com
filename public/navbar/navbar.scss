@@ -51,18 +51,6 @@
   font-family: 'Asap-Regular', sans-serif;
 }
 
-.navigation-element:hover img{
-  display: none;
-}
-
-.navigation-element span{
-  display: none;
-}
-
-.navigation-element:hover span {
-  display: inline-block;
-}
-
 @media screen and (min-width: 320px){
   .navigation-element > img{
     width: 40%;
@@ -78,7 +66,17 @@
 }
 
 @media screen and (min-width: 768px){
+  .navigation-element:hover img{
+    display: none;
+  }
 
+  .navigation-element span{
+    display: none;
+  }
+
+  .navigation-element:hover span {
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 900px){
