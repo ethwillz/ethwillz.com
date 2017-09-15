@@ -55,6 +55,10 @@
   .navigation-element > img{
     width: 40%;
   }
+
+  .navigation-element span{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 480px){
