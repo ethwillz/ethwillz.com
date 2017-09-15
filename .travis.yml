@@ -2,10 +2,10 @@ language: node_js
 node_js:
 - 8.4.0
 before_script:
-- sudo install npm
 - npm run build
 deploy:
   provider: firebase
+  skip_cleanup: true
   token:
     secure: 1/IAFiS6XRP3OwtKhbbDq9bQwOGOWMjeEDCktlvyHntwwYMXP5JGiTBnw9z_SgeXHC
 env:
