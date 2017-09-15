@@ -1,8 +1,7 @@
 language: node_js
 node_js:
-- 6.9.1
+- 8.4.0
 before_script:
-- sudo npm install
 - npm run build
 deploy:
   provider: firebase
