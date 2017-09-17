@@ -1,8 +1,10 @@
-require('../navbar/navbar.js');
+require('../navbar/navbar.js')
 require('../navbar/navbar.scss')
-require('./index.scss');
-require('../resume/css/resume.scss');
-require('../images/')
+require('./index.scss')
+require('../resume/css/resume.scss')
+require('../images/main.jpg')
+require('../images/main2.jpg')
+require('../images/home.png')
 
 $(window).scroll(function(){
   //Personal information section fade in/out

@@ -5,21 +5,22 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssets = require('optimize-css-assets-webpack-plugin');
 
 let config = {
-  entry: '../src/index/index.js',
+  entry: './src/index/index.js',
   output: {
-    path: path.resolve(__dirname, '../public'),
+    path: path.resolve(__dirname, './public'),
     filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
+        test: /\.html$/,
+        exclude: /node_modules/,
+        loader: 'html-loader'
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      },
-      {
-        test: /\.(html)$/,
-        loader: 'file-loader?name=[path][name].[ext]'
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -68,7 +69,7 @@ let config = {
     new ExtractTextWebpackPlugin('styles.css')
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, '../public'),
+    contentBase: path.resolve(__dirname, './public'),
     historyApiFallback: true,
     inline: true,
     open: true
