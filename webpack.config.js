@@ -44,9 +44,7 @@ let config = {
               },
             },
           }
-        ],
-        exclude: /node_modules/,
-        include: __dirname
+        ]
       },
       {
         test: /\.(eot|otf|svg|ttf|woff|woff2)$/,
