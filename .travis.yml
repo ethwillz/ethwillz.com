@@ -4,7 +4,6 @@ node_js:
 before_script:
 - npm install cross-env -D
 - npm install --save-dev -g webpack
-- npm install --save-dev image-webpack-loader
 - npm rebuild node-sass --force
 deploy:
   provider: firebase
