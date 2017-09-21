@@ -1,0 +1,22 @@
+body{
+  width: 100%;
+  margin: 0;
+}
+
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('../fonts/FiraSans-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Asap-Regular";
+    src: url('../fonts/Asap-Regular.otf') format("opentype");
+}
+
+$title-font: 'Zilla Slab Highlight', cursive;
+
+#navbar{
+  background: rgba(0, 0, 0, .6);
+  transition: top 0.15s ease-in-out;
+  position: fixed;
+}

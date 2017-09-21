@@ -4,70 +4,39 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = yes" />
       <title>Ethan Williams</title>
-      <link href="css/projects.css" rel="stylesheet">
-      <link href="../navbar.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+      <script type="text/javascript" src="bundle.js"></script>
+      <link rel='stylesheet' href='styles.css'/>
   </head>
 
   <body>
-    <div id="navbar">
+    <div id="navbar" class="nav-down">
       <div id="logo">
         Logo here
       </div>
       <div id="navigation">
-        <div class="navigation-element" onclick="location.href='../index.html'">
+        <div id="what" class="navigation-element" onclick="location.href='index.html'">
+          <img src="../images/home.png">
           <span>
             Home
           </span>
         </div>
-        <div class="navigation-element" onclick="location.href='../resume/resume.html'">
+        <div class="navigation-element" onclick="location.href='resume.html'">
+          <img src="../images/resume.png">
           <span>
             Resume
           </span>
         </div>
-        <div class="selected navigation-element">
-          Projects
+        <div class="navigation-element" onclick="location.href='resume.html'">
+          <img src="../images/projects.png">
+          <span>
+            Projects
+          </span>
         </div>
       </div>
     </div>
 
-    <div class="projects">
-
-    <a href="https://www.github.com/ethwillz">
-      <div id="header">
-          <img src="../pictures/github.png"/>
-      </div>
-    </a>
-
-      <div class="project">
-        <img src="../pictures/eou.png"/>
-        <div class="title">
-          Ease of Use
-        </div>
-        <div class="description">
-          Ease of Use is a social network for fashion, where users can share all of
-          their favorite pieces with their followers and gain inspiration from other
-          users. The project was built with Java and Android Studio using Firebase
-          for their NoSQL database and authentication.
-        </div>
-      </div>
-
-      <div class="project grey">
-        <img src="../pictures/coms327.png"/>
-        <div class="title">
-          ASCII Dungeon Game
-        </div>
-        <div class="description">
-          This is a console dungeon game done for Computer Science 327, advanced
-          programming techniques in C & C++; The game has a randomly generated
-          dungeon with monsters and equipment throughout. In addition to C and C++,
-          I also became skilled in Linux.
-        </div>
-      </div>
-
-    </div>
+    
 
   </body>
 
