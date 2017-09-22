@@ -8,6 +8,10 @@ a{
   color: black;
 }
 
+ul {
+  list-style-type: none;
+}
+
 @font-face {
     font-family: "FiraSans-Medium";
     src: url('../fonts/FiraSans-Medium.otf') format("opentype");
@@ -78,8 +82,39 @@ a{
   font-family: 'FiraSans-Medium', sans-serif;
 }
 
-.section-title > img{
-  width: 5%;
+.sub-section-title{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 5%;
+  font-family: 'Asap-Regular', sans-serif;
+}
+
+.skill-list{
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Asap-Regular', sans-serif;
+}
+
+.skill-list > li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Asap-Regular', sans-serif;
+  flex: 2;
+}
+
+.stars{
+  flex: 3;
+}
+
+.stars > img{
+  width: 11%;
 }
 
 .top-section{
@@ -88,16 +123,29 @@ a{
   margin-top: 15px;
 }
 
+#skills-container{
+  display: flex;
+}
+
 .left{
   flex: 2;
+}
+
+.left-half{
+  flex: 1;
 }
 
 .right{
   flex: 3;
 }
 
+.right-half{
+  flex: 1;
+}
+
 .institution, .title, .time, .description, .location-link{
   margin-top: 12px;
+  font-size: 18px;
 }
 
 .institution, .title{
@@ -118,6 +166,10 @@ a{
 .location, .link{
   flex: 1;
   font-family: 'Asap-Regular', sans-serif;
+}
+
+.location > a > img, .link > a > img{
+  padding-top: 3%;
 }
 
 .location:hover, .link:hover{
