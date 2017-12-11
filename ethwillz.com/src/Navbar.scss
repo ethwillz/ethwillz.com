@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('./fonts/FiraSans-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Asap-Regular";
+    src: url('./fonts/Asap-Regular.otf') format("opentype");
+}
+
+#navbar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.nav-down{
+  top: 0;
+}
+
+.nav-up {
+  top: -10%;
+}
+
+#logo{
+  flex: 3;
+  float: left;
+}
+
+#navigation{
+  flex: 2;
+  display: flex;
+  float: right;
+  width: 33%;
+}
+
+.navigation-element{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 120%;
+  height: 3em;
+  cursor: pointer;
+  color: white;
+  opacity: 1;
+  font-family: 'Asap-Regular', sans-serif;
+}
+
+@media screen and (min-width: 320px){
+  .navigation-element > img{
+    width: 40%;
+  }
+
+  .navigation-element span{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px){
+
+}
+
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 768px){
+  .navigation-element:hover img{
+    display: none;
+  }
+
+  .navigation-element span{
+    display: none;
+  }
+
+  .navigation-element:hover span {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .navigation-element > img{
+    width: 22%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+
+}
