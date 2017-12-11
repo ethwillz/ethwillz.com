@@ -5,12 +5,12 @@ body{
 
 @font-face {
     font-family: "FiraSans-Medium";
-    src: url('../fonts/FiraSans-Medium.otf') format("opentype");
+    src: url('./fonts/FiraSans-Medium.otf') format("opentype");
 }
 
 @font-face {
     font-family: "Asap-Regular";
-    src: url('../fonts/Asap-Regular.otf') format("opentype");
+    src: url('./fonts/Asap-Regular.otf') format("opentype");
 }
 
 $title-font: 'Zilla Slab Highlight', cursive;

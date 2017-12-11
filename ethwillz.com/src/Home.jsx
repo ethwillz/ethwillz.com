@@ -11,7 +11,7 @@ import './Home.scss';
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="">
         <div id="main">
           <div id="nameandtitle">
             <div id="name">Ethan Williams</div>
