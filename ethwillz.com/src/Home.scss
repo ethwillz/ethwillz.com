@@ -1,0 +1,232 @@
+body{
+  width: 100%;
+  margin: 0;
+}
+
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('../fonts/FiraSans-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Asap-Regular";
+    src: url('../fonts/Asap-Regular.otf') format("opentype");
+}
+
+$title-font: 'Zilla Slab Highlight', cursive;
+
+#navbar{
+  background: rgba(0, 0, 0, .6);
+  transition: top 0.15s ease-in-out;
+  position: fixed;
+}
+
+#main{
+  display: flex;
+  background-image: url('./images/main.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+
+#nameandtitle{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: $title-font;
+}
+
+.about > img{
+  width: 60%;
+  height: auto;
+}
+
+.about > h1{
+  height: 15%;
+  font-family: 'FiraSans-Medium';
+}
+
+.about > h2{
+  margin-top: 15%;
+  font-family: 'Asap-Regular';
+}
+
+#secondary{
+  display: flex;
+  position: relative;
+  background-image: url('./images/main2.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+
+@media screen and (min-width: 320px){
+  body{
+    top: 7.5%;
+  }
+
+  #navbar{
+      height: 7.5%;
+  }
+
+  #main{
+    background-position: 900px 0px;
+    top: 7.5%;
+  }
+
+  #nameandtitle{
+    top: 60%;
+    left: 50%;
+    width: 88%;
+    font-size: 300%;
+  }
+
+  .information{
+    display: flex;
+  }
+
+  #personal-info{
+    flex-direction: column;
+  }
+
+  #secondary{
+    background-position: 600px 0px;
+  }
+
+  #quoteandauthor{
+    color: white;
+    width: 88%;
+    top: 38%;
+    position: absolute;
+    font-family: $title-font;
+  }
+
+  #quote{
+    font-size: 250%;
+    width: 90%;
+    margin-left: 10%;
+    display: none;
+  }
+
+  #author{
+    font-size: 150%;
+    width: 55%;
+    margin-left: 57%;
+    display: none;
+  }
+
+  .about{
+    flex: 1;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .social-media{
+    flex: 1;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .social-media > a > img{
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 480px){
+
+}
+
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 900px){
+  body{
+    top: 7.5%;
+  }
+
+  #navbar{
+      height: 7.5%;
+  }
+
+  #main{
+    background-position: 0px 0px;
+    top: 7.5%;
+  }
+
+  #nameandtitle{
+    top: 54%;
+    left: 50%;
+    font-size: 400%;
+  }
+
+  .information{
+    display: flex;
+  }
+
+  #personal-info{
+    flex-direction: row;
+  }
+
+  #secondary{
+    background-position: 0px 0px;
+  }
+
+  #quoteandauthor{
+    color: white;
+    top: 52%;
+    position: absolute;
+    font-family: $title-font;
+  }
+
+  #quote{
+    font-size: 60px;
+    width: 60%;
+    margin-left: 30%;
+    display: none;
+  }
+
+  #author{
+    font-size: 35px;
+    width: 30%;
+    margin-left: 60%;
+    display: none;
+  }
+
+  .about{
+    flex: 1;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .social-media{
+    flex: 1;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .social-media > a > img{
+    width: 25%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  #nameandtitle{
+    top: 60%;
+    left: 50%;
+    font-size: 550%;
+  }
+}

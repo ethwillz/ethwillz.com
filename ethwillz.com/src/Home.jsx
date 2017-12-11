@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './Home.css';
+import Programming from './images/programming.png';
+import Fitness from './images/fitness.png';
+import Fashion from './images/fashion.png';
+import Instagram from './images/instagram.png';
+import Twitter from './images/twitter.png';
+import Facebook from './images/facebook.png';
+import LinkedIn from './images/linkedin.png';
+import './Home.scss';
 
 class Home extends Component {
   render() {
@@ -15,17 +21,17 @@ class Home extends Component {
 
         <div id="personal-info" className="information">
           <div className="about">
-            <img src={'../images/programming.png" id="programming'}/>
+            <img src={Programming}/>
             <h1>Intensely nerdy</h1>
             <h2>I work full-stack and am skilled in web, mobile, and machine learning development</h2>
           </div>
           <div className="about">
-            <img src={'../images/fitness.png" id="fitness'}/>
+            <img src={Fitness}/>
             <h1>Health minded</h1>
             <h2>I run and climb most days, fueling myself with good food as often as I can</h2>
           </div>
           <div className="about">
-            <img src={'../images/fashion.png" id="fashion'}/>
+            <img src={Fashion}/>
             <h1>Fashion forward</h1>
             <h2>I always strive to dress the best for every occasion and dabble in new looks</h2>
           </div>
@@ -41,22 +47,22 @@ class Home extends Component {
         <div className="information">
           <div className="social-media">
             <a href="https://www.instagram.com/ethwillz/?hl=en">
-              <img src={'../images/instagram.png"'}/>
+              <img src={Instagram}/>
             </a>
           </div>
           <div className="social-media">
             <a href="https://twitter.com/ethwillz">
-              <img src={'../images/twitter.png'}/>
+              <img src={Twitter}/>
             </a>
           </div>
           <div className="social-media">
             <a href="https://www.facebook.com/ethan.williams.921">
-              <img src={'../images/facebook.png'}/>
+              <img src={Facebook}/>
             </a>
           </div>
           <div className="social-media">
             <a href="https://www.linkedin.com/in/ethwillz">
-              <img src={'../images/linkedin.png'}/>
+              <img src={LinkedIn}/>
             </a>
           </div>
         </div>

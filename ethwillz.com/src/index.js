@@ -7,3 +7,5 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<Navbar />, document.getElementById('root'));
 registerServiceWorker();
+
+// npm install --save-dev react-scripts-webpack-config-editor
