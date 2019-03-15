@@ -1,21 +1,19 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = yes" />
-      <title>Ethan Williams</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = yes" />
+    <title>Ethan Williams</title>
 
-      <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
 
-      <script type="text/javascript" src="bundle.js"></script>
-      <link rel='stylesheet' href='styles.css'/>
+    <script type="text/javascript" src="bundle.js"></script>
+    <link rel='stylesheet' href='styles.css'/>
   </head>
 
   <body>
     <div id="navbar" class="nav-down">
-      <div id="logo">
-        
-      </div>
+      <div id="logo"></div>
       <div id="navigation">
         <div id="what" class="navigation-element" onclick="location.href='../index.html'">
           <img src="../images/home.png">
@@ -44,7 +42,7 @@
       </div>
     </div>
 
-<div id="page-content">
+  <div id="page-content">
     <div id="project-background" class="section top-container">
       <div class="flex-center">
         <div id="page-title">Projects</div>
@@ -54,47 +52,152 @@
         <div class="section-title">
           Senior Design Project- Traffic Generator
         </div>
-        <div class="top-section">
-          <div style="display: flex; flex-direction: column;">
-              <div style="font-weight: bold;">Project Manager</div>
-              <div>A traffic generator which generates realistic web traffic against a set of targets
-              </div>
-              <div>Skills or knowledge gained:</div>
-              <div><Supporting documents:</div>
-              <div>Big picture contribution:</div>
+
+        <div class="project-detail">
+          <div class="project-role-and-links">
+            <div class="project-role">Project Manager</div>
+            <div>
+                <div class="link">
+                  <a href="http://sdmay19-39.sd.ece.iastate.edu/http://sdmay19-39.sd.ece.iastate.edu/">
+                    <img style="width: 1em;" src="../images/link.png">
+                    Project Page
+                  </a>
+                </div>
+            </div>
           </div>
-        </div>
+
+          <div>
+            A traffic generator which generates realistic web traffic against a set of targets for use in Iowa State's Cyber Defense
+            Competition. In the competition, it will obscure traffic coming from the "red" team who try and compromise participants ("blue" team)
+            making the environment much more realistic and nearly impossible to prevent attacks by banning an IP range. In cubersecurity classes,
+            it will allow professors to demonstrate tools like IDS's which can notify users of suspicious attacks, right now there's no good way to do this.
+          </div>
+          </br>
+
+          <div>
+            Through this project I have become more proficient in Python, Docker, and RabbitMQ which were our main
+            implementation technologies. Additionally, I learned a lot about networking which was an area I had next 
+            to no experience in.
+          </div>
+          </br>
+        
+          <div>
+            My main contribution to the project was implenting standard web rewquests to our task-running framework. The module reads endpoints
+            from the configuration file and periodically launches a new request towards a randomly selected target.
+          </div>
+
+      </div>
+    </div>
+
+    <div style="padding-top: 2em;">
+      <div class="section-title">
+        LiveWell
       </div>
 
-      <div>
-        <div class="section-title">
-          Senior Design
-        </div>
-        <div class="top-section">
-          Description: 
-          Role:
-          Skills or knowledge gained: 
-          Supporting documents: 
-          Big picture contribution: 
-        </div>
-      </div>
+      <div class="project-detail">
+          <div class="project-role-and-links">
+            <div class="project-role">Team Leader</div>
+            <div>
+                <div class="link">
+                  <a href="https://github.com/ethwillz/LiveWell">
+                    <img style="width: 1em;" src="../images/link.png">
+                    Project
+                  </a>
+                </div>
+            </div>
+          </div>
 
-      <div>
-        <div class="section-title">
-          Senior Design
+        <div>A mobile application designed for roommates with a variety of functionality such as shared gorcery lists, bill splitting,
+          and messaging. The project set out to design a way to bring together a variety of apps and technologies into a single, cohesive
+          application to make living easier.
         </div>
-        <div class="top-section">
-          Description: 
-          Role:
-          Skills or knowledge gained: 
-          Supporting documents: 
-          Big picture contribution: 
+        </br>
+
+        <div>We decided to use Xamarin for this project so I learned a lot about that framework and cross-platform mobile applications in general.
+            The basde C# skills I learned here were really helpful in developing my skills for the back end work I now specialize in at work.
+        </div>
+        </br>
+
+        <div>As team leader, I was the driver of the design and schedule of the work we were producing. The project design was mainly me and I also 
+          contributed to implementation of the components in the system. Ultimately we did not get the project done in the semester but I learned a lot
+          about team organization and scheduling of software work.
         </div>
       </div>
     </div>
-    
 
+    <div style="padding-top: 2em;">
+      <div class="section-title">
+        IEEE Login System
+      </div>
+      <div class="project-detail">
+          <div class="project-role-and-links">
+            <div class="project-role">Developer</div>
+            <div>
+                <div class="link">
+                  <a href="https://github.com/IEEEatIowaState/login-script">
+                    <img style="width: 1em;" src="../images/link.png">
+                    Project
+                  </a>
+                </div>
+            </div>
+          </div>
 
+        <div>A web utility made to keep track of attendance numbers and automatically generate reports for the department to notify them of attendance numbers
+            to receive funding.
+        </div>
+        </br>
+
+        <div>I used JavaScript which I was pretty comfortable in but got the chance to try Google Drive's API in which I got really good at how promises and 
+          callbacks can be used, two topics I had not had the chance to explore in JavaScript very much before this point.
+        </div>
+        </br>
+
+        <div>Supporting documents: </div>
+
+        <div>I was the only developer working on this project because we needed to replace the script we had been losing which had been lost. This forced me to put
+          more thought into the design of the utility so that it can be extended in coming years as the needs of the utility grow.
+        </div>
+      </div>
+    </div>
+
+    <div style="padding-top: 2em; padding-bottom: 1em;">
+        <div class="section-title">
+          Virtual Arcade
+        </div>
+
+        <div class="project-detail">
+          <div class="project-role-and-links">
+            <div class="project-role">Contributor</div>
+            <div>
+                <div class="link">
+                  <a href="https://github.com/ethwillz/Arcade">
+                    <img style="width: 1em;" src="../images/link.png">
+                    Project
+                  </a>
+                </div>
+            </div>
+          </div>
+
+          <div>
+            An arcade in which we only got one game fully functional: Tic-Tac-Toe. The project is multiplayer and assigns each new user to the next
+            user who tries to start a game. 
+          </div>
+          </br>
+
+          <div>
+            Through this project I taught myself Express, my first attempt at doing a back end in JavaScript. Using sockets was a good way to get a crash-course in this
+            and was really a good experience. Additionally, this was my first experience with React which I now work with in production at work.
+          </div>
+          </br>
+        
+          <div>
+            I built the whole Tic-Tac-Toe game off of a project infrastructure that my partner and I set up. He got a game working using p5.js but during our
+            time trying to integrate it into the React/Express framework we encountered errors we were not able to get past.
+          </div>
+
+      </div>
+    </div>
+  </div>
    
   </div>
   </div>

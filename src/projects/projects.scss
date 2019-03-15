@@ -46,13 +46,14 @@ ul {
 }
 
 #page-title{
-  font-size: 45px;
+  font-size: 3em;
   font-weight: bold;
   font-family: 'FiraSans-Medium', sans-serif;
+  padding-bottom: 1em;
 }
 
 .section-title{
-  font-size: 35px;
+  font-size: 2em;
   font-weight: bold;
   font-family: 'FiraSans-Medium', sans-serif;
 }
@@ -65,10 +66,25 @@ ul {
   font-family: 'Asap-Regular', sans-serif;
 }
 
-.top-section{
+.project-role{
+  padding-bottom: .5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'FiraSans-Medium', sans-serif;
+  padding-right: 1em;
+}
+
+.project-role-and-links{
+  display: flex;
+}
+
+.project-detail{
   position: relative;
   display: flex;
+  flex-direction: column;
   margin-top: 15px;
+  font-size: 1em;
+  font-family: 'Asap-Regular', sans-serif;
 }
 
 #project-background{
