@@ -52,14 +52,27 @@ let config = {
     inline: true,
     open: true
   },
-  devtool: 'eval-source-map'
+  devtool: 'eval-source-map',
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        uglifyOptions: {
+          compress: false,
+          ecma: 6,
+          mangle: true
+        },
+        sourceMap: true
+      })
+    ]
+  }
 }
 
 module.exports = config;
 
 if(process.env.NODE_ENV === 'production'){
   module.exports.plugins.push(
-    new webpack.optimize.UglifyJsPlugin(),
     new OptimizeCssAssets()
   )
 }
