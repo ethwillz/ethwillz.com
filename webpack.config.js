@@ -11,44 +11,24 @@ let config = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.html$/,
         exclude: /node_modules/,
-        loader: 'html-loader'
+        use: 'html-loader'
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        use: 'babel-loader'
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-          'file-loader?name=/images/[name].[ext]',
-          {
-            loader: 'image-webpack-loader',
-            query: {
-              mozjpeg: {
-                progressive: true,
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              optipng: {
-                optimizationLevel: 4,
-              },
-              pngquant: {
-                quality: '75-90',
-                speed: 3,
-              },
-            },
-          }
-        ]
+        use: 'file-loader'
       },
       {
         test: /\.(eot|otf|svg|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=/fonts/[name].[ext]'
+        use: 'file-loader?name=/fonts/[name].[ext]'
       },
       {
         test: /\.scss$/,
