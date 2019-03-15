@@ -3,6 +3,15 @@ body{
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
 @font-face {
     font-family: "FiraSans-Medium";
     src: url('../fonts/FiraSans-Medium.otf') format("opentype");
@@ -13,10 +22,59 @@ body{
     src: url('../fonts/Asap-Regular.otf') format("opentype");
 }
 
-$title-font: 'Zilla Slab Highlight', cursive;
-
 #navbar{
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .7);
   transition: top 0.15s ease-in-out;
   position: fixed;
+}
+.top-container{
+    margin-top: 7%;
+    margin-left: 13%;
+    width: 35%;
+    padding-left: 19.5%;
+    padding-right: 19.5%;
+    padding-top: 20px;
+    border-radius: 7px 7px 7px 7px;
+    border-style: none none none none;
+    border-width: 2px;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-title{
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'FiraSans-Medium', sans-serif;
+}
+
+.section-title{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'FiraSans-Medium', sans-serif;
+}
+
+.sub-section-title{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 5%;
+  font-family: 'Asap-Regular', sans-serif;
+}
+
+.top-section{
+  position: relative;
+  display: flex;
+  margin-top: 15px;
+}
+
+#project-background{
+  margin-left: 13%;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 70%;
+  background-color: white;
 }

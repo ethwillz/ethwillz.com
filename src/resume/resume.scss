@@ -35,6 +35,7 @@ ul {
   background-image: url('../../images/pattern.jpg');
   background-attachment: fixed;
   padding-bottom: 30px;
+  width: 100%;
 }
 
 .section{
@@ -44,10 +45,6 @@ ul {
   padding-right: 2%;
   width: 70%;
   background-color: white;
-}
-
-.top{
-  padding-top: 15px;
 }
 
 .bottom{
@@ -104,7 +101,7 @@ ul {
 
 .skill{
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Asap-Regular', sans-serif;
   flex: 2;
 }
@@ -114,7 +111,7 @@ ul {
 }
 
 .stars > img{
-  width: 11%;
+  width: 6%;
 }
 
 .top-section{
@@ -125,6 +122,8 @@ ul {
 
 #skills-container{
   display: flex;
+  width: 80%;
+  padding-left: 10%;  
 }
 
 .left{
@@ -178,15 +177,14 @@ ul {
 
 @media screen and (min-width: 320px){
   #download-group{
-    margin-top: 18%;
     display: flex;
     margin-left: 13%;
     width: 35%;
     background-color: #E5E7E9;
     padding-left: 19.5%;
     padding-right: 19.5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border-radius: 7px 7px 0px 0px;
     border-style: none none none none;
     border-width: 2px;
