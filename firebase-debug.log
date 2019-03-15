@@ -1,0 +1,310 @@
+[debug] [2019-03-15T15:16:28.104Z] ----------------------------------------------------------------------
+[debug] [2019-03-15T15:16:28.106Z] Command:       /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/firebase deploy --token 1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU
+[debug] [2019-03-15T15:16:28.106Z] CLI Version:   3.17.4
+[debug] [2019-03-15T15:16:28.106Z] Platform:      darwin
+[debug] [2019-03-15T15:16:28.106Z] Node Version:  v10.5.0
+[debug] [2019-03-15T15:16:28.121Z] Time:          Fri Mar 15 2019 10:16:28 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:16:28.121Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-15T15:16:28.137Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:16:28.137Z] > authorizing via --token option
+[debug] [2019-03-15T15:16:28.138Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:16:28.138Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform' } 
+ Fri Mar 15 2019 10:16:28 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:16:28.711Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:16:28.712Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ethwillz-54f59  
+  
+ Fri Mar 15 2019 10:16:28 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:16:29.218Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:16:29.220Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ethwillz-54f59/tokens  
+  
+ Fri Mar 15 2019 10:16:29 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:16:29.730Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ethwillz-54f59'...
+[info] 
+[info] i  deploying database, hosting
+[debug] [2019-03-15T15:16:30.419Z] TypeError: rulesConfig.forEach is not a function
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/deploy/database/prepare.js:30:15)
+    at _chain (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:23:45)
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:77:12
+    at tryCatch (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:525:12)
+    at invokeCallback (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:538:13)
+    at publish (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:508:7)
+    at flush (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:2415:5)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-03-15T15:17:26.350Z] ----------------------------------------------------------------------
+[debug] [2019-03-15T15:17:26.354Z] Command:       /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/firebase deploy --token 1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU --debug
+[debug] [2019-03-15T15:17:26.355Z] CLI Version:   3.17.4
+[debug] [2019-03-15T15:17:26.355Z] Platform:      darwin
+[debug] [2019-03-15T15:17:26.355Z] Node Version:  v10.5.0
+[debug] [2019-03-15T15:17:26.378Z] Time:          Fri Mar 15 2019 10:17:26 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:17:26.378Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-15T15:17:26.409Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:17:26.410Z] > authorizing via --token option
+[debug] [2019-03-15T15:17:26.413Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:17:26.413Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform' } 
+ Fri Mar 15 2019 10:17:26 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:17:26.688Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:17:26.689Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ethwillz-54f59  
+  
+ Fri Mar 15 2019 10:17:26 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:17:26.947Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:17:26.950Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ethwillz-54f59/tokens  
+  
+ Fri Mar 15 2019 10:17:26 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:17:27.194Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ethwillz-54f59'...
+[info] 
+[info] i  deploying database, hosting
+[debug] [2019-03-15T15:17:27.662Z] TypeError: rulesConfig.forEach is not a function
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/deploy/database/prepare.js:30:15)
+    at _chain (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:23:45)
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:77:12
+    at tryCatch (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:525:12)
+    at invokeCallback (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:538:13)
+    at publish (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:508:7)
+    at flush (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:2415:5)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-03-15T15:19:01.173Z] ----------------------------------------------------------------------
+[debug] [2019-03-15T15:19:01.177Z] Command:       /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/firebase deploy --token 1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU --debug
+[debug] [2019-03-15T15:19:01.178Z] CLI Version:   3.17.4
+[debug] [2019-03-15T15:19:01.178Z] Platform:      darwin
+[debug] [2019-03-15T15:19:01.178Z] Node Version:  v10.5.0
+[debug] [2019-03-15T15:19:01.188Z] Time:          Fri Mar 15 2019 10:19:01 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:19:01.189Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-15T15:19:01.209Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:19:01.209Z] > authorizing via --token option
+[debug] [2019-03-15T15:19:01.210Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:19:01.211Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform' } 
+ Fri Mar 15 2019 10:19:01 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:19:01.447Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:19:01.448Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ethwillz-54f59  
+  
+ Fri Mar 15 2019 10:19:01 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:19:01.701Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:19:01.704Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ethwillz-54f59/tokens  
+  
+ Fri Mar 15 2019 10:19:01 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:19:01.927Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ethwillz-54f59'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2019-03-15T15:19:02.156Z] >>> HTTP REQUEST PUT https://ethwillz-54f59.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+} 
+ Fri Mar 15 2019 10:19:02 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:19:02.447Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database ethwillz-54f59 is valid
+[info] i  hosting: preparing public directory for upload...
+[debug] [2019-03-15T15:19:02.726Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/ethwillz-54f59/uploads/-La0vq-TsaCMJxYyGBKs?fileCount=36&message=  
+  
+ Fri Mar 15 2019 10:19:02 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:19:03.745Z] <<< HTTP RESPONSE 410
+[debug] [2019-03-15T15:19:03.746Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2019-03-15T15:19:03.749Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:10:13)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:45:25)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1163:10)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1085:12)
+    at Object.onceWrapper (events.js:273:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-03-15T15:20:34.542Z] ----------------------------------------------------------------------
+[debug] [2019-03-15T15:20:34.546Z] Command:       /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/firebase deploy --token 1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU --debug
+[debug] [2019-03-15T15:20:34.546Z] CLI Version:   3.17.4
+[debug] [2019-03-15T15:20:34.546Z] Platform:      darwin
+[debug] [2019-03-15T15:20:34.547Z] Node Version:  v10.5.0
+[debug] [2019-03-15T15:20:34.557Z] Time:          Fri Mar 15 2019 10:20:34 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:20:34.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-15T15:20:34.575Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:20:34.576Z] > authorizing via --token option
+[debug] [2019-03-15T15:20:34.577Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:20:34.577Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform' } 
+ Fri Mar 15 2019 10:20:34 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:20:34.798Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:20:34.799Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ethwillz-54f59  
+  
+ Fri Mar 15 2019 10:20:34 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:20:35.070Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:20:35.072Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ethwillz-54f59/tokens  
+  
+ Fri Mar 15 2019 10:20:35 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:20:35.493Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ethwillz-54f59'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2019-03-15T15:20:35.711Z] >>> HTTP REQUEST PUT https://ethwillz-54f59.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+} 
+ Fri Mar 15 2019 10:20:35 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:20:35.924Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database ethwillz-54f59 is valid
+[info] i  hosting: preparing public directory for upload...
+[debug] [2019-03-15T15:20:36.201Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/ethwillz-54f59/uploads/-La0wBoz1DyvQzDh3CgP?fileCount=36&message=  
+  
+ Fri Mar 15 2019 10:20:36 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:20:37.338Z] <<< HTTP RESPONSE 410
+[debug] [2019-03-15T15:20:37.338Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2019-03-15T15:20:37.341Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:10:13)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:45:25)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1163:10)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1085:12)
+    at Object.onceWrapper (events.js:273:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-03-15T15:23:01.299Z] ----------------------------------------------------------------------
+[debug] [2019-03-15T15:23:01.304Z] Command:       /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/firebase deploy --token 1/JVkiOAIi0xODyO4Kgd9F3X-Sh7EeOWcxT6yUH_RUXlU --debug
+[debug] [2019-03-15T15:23:01.305Z] CLI Version:   6.5.0
+[debug] [2019-03-15T15:23:01.305Z] Platform:      darwin
+[debug] [2019-03-15T15:23:01.305Z] Node Version:  v10.5.0
+[debug] [2019-03-15T15:23:01.306Z] Time:          Fri Mar 15 2019 10:23:01 GMT-0500 (Central Daylight Time)
+[debug] [2019-03-15T15:23:01.306Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-15T15:23:01.325Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:23:01.325Z] > authorizing via --token option
+[debug] [2019-03-15T15:23:01.325Z] [iam] checking project ethwillz-54f59 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2019-03-15T15:23:01.327Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-15T15:23:01.328Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-03-15T15:23:01.728Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:23:01.730Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ethwillz-54f59:testIamPermissions  
+
+[debug] [2019-03-15T15:23:02.167Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:23:02.170Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ethwillz-54f59  
+ 
+[debug] [2019-03-15T15:23:02.394Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ethwillz-54f59'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2019-03-15T15:23:02.401Z] >>> HTTP REQUEST PUT https://ethwillz-54f59.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2019-03-15T15:23:02.587Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database ethwillz-54f59 is valid
+[debug] [2019-03-15T15:23:02.590Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ethwillz-54f59/versions  
+
+[debug] [2019-03-15T15:23:04.383Z] <<< HTTP RESPONSE 200
+[info] i  hosting[ethwillz-54f59]: beginning deploy...
+[info] i  hosting[ethwillz-54f59]: found 36 files in public
+[debug] [2019-03-15T15:23:04.395Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2019-03-15T15:23:04.565Z] [hosting] hash cache [cHVibGlj] stored for 36 files
+[debug] [2019-03-15T15:23:04.566Z] [hosting][hash queue][FINAL]
+[debug] [2019-03-15T15:23:04.566Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ethwillz-54f59/versions/26b91d1c02336750:populateFiles  
+ <request body omitted>
+[info] i  hosting: adding files to version [0/36] (0%)
+[debug] [2019-03-15T15:23:07.032Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:23:07.052Z] [hosting][populate queue][FINAL]
+[debug] [2019-03-15T15:23:07.052Z] [hosting] uploads queued: 35
+[info] i  hosting: uploading new files [33/35] (94%)
+[debug] [2019-03-15T15:23:08.407Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[ethwillz-54f59]: file upload complete
+[debug] [2019-03-15T15:23:08.408Z] [hosting] deploy completed after 4024ms
+[info] i  database: releasing rules...
+[debug] [2019-03-15T15:23:08.569Z] >>> HTTP REQUEST PUT https://ethwillz-54f59.firebaseio.com/.settings/rules.json  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2019-03-15T15:23:09.094Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules for database ethwillz-54f59 released successfully
+[debug] [2019-03-15T15:23:09.095Z] [
+  {
+    "config": {
+      "public": "public",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "ethwillz-54f59"
+    },
+    "site": "ethwillz-54f59",
+    "version": "sites/ethwillz-54f59/versions/26b91d1c02336750"
+  }
+]
+[info] i  hosting[ethwillz-54f59]: finalizing version...
+[debug] [2019-03-15T15:23:09.095Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/ethwillz-54f59/versions/26b91d1c02336750?updateMask=status  
+
+[debug] [2019-03-15T15:23:09.503Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:23:09.503Z] [hosting] finalized version for ethwillz-54f59:
+[info] ✔  hosting[ethwillz-54f59]: version finalized
+[info] i  hosting[ethwillz-54f59]: releasing new version...
+[debug] [2019-03-15T15:23:09.504Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ethwillz-54f59/releases?version_name=sites/ethwillz-54f59/versions/26b91d1c02336750  
+
+[debug] [2019-03-15T15:23:09.912Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-15T15:23:09.912Z] [hosting] release:
+[info] ✔  hosting[ethwillz-54f59]: release complete
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/ethwillz-54f59/overview
+[info] Hosting URL: https://ethwillz-54f59.firebaseapp.com
